@@ -11,6 +11,7 @@ class App extends React.Component {
   }
 
   render() {
+    const { loggedIn } = this.props
     return(
       <div className="App">
         <Login />
