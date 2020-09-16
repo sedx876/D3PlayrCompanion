@@ -21,11 +21,14 @@ class App extends React.Component {
     return(
       <div className="App">
       <Navbar />
-        <Login />
+
+        {/* <Login />
         <Signup />
-        <Logout />
+        <Logout /> */}
         <Switch>
           <Route exact path='/home' component={Home} />
+          <Route exact path='/signup' render={({history})=><Signup history={history}/>}/>
+          <Route exact path='/login' component={Login}/>
         </Switch>
       </div>
     )
