@@ -1,8 +1,10 @@
 import React from 'react';
 import './styles/App.css';
 import Login from './components/Login'
+import Signup from './components/Signup'
 import { connect } from 'react-redux';
 import { getCurrentUser } from "./actions/currentUser.js"
+import 'bootswatch/dist/slate/bootstrap.min.css'
 
 class App extends React.Component {
 
@@ -15,6 +17,7 @@ class App extends React.Component {
     return(
       <div className="App">
         <Login />
+        <Signup />
       </div>
     )
   }
