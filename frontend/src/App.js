@@ -9,6 +9,7 @@ import { connect } from 'react-redux';
 import { getCurrentUser } from "./actions/currentUser.js"
 import { Route, Switch, withRouter } from 'react-router-dom'
 import 'bootswatch/dist/slate/bootstrap.min.css'
+import MyCharacters from './components/MyCharacters'
 
 class App extends React.Component {
 
@@ -20,6 +21,7 @@ class App extends React.Component {
     const { loggedIn } = this.props
     return(
       <div className="App">
+      { loggedIn ? <MyCharacters /> : <Home/> }
       <Navbar />
 
         {/* <Login />
