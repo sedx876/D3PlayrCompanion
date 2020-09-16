@@ -52,9 +52,37 @@ export const login = (credentials, history) => {
           alert(response.error)
         } else {
           dispatch(setCurrentUser(response.data))
-          //dispatch(getMyTrips())
+          //dispatch(getMyCharacters())
           dispatch(resetLoginForm())
           //history.push('/')
+        }
+      })
+      .catch(console.log)
+  }
+}
+
+export const signup = (credentials, history) => {
+  return dispatch => {
+    const userInfo = {
+      user: credentials
+    }
+    return fetch("http://localhost:3001/api/v1/signup", {
+      credentials: "include",
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify(userInfo)
+    })
+      .then(r => r.json())
+      .then(response => {
+        if (response.error) {
+          alert(response.error)
+        } else {
+          dispatch(setCurrentUser(response.data))
+          //dispatch(getMyCharacters())
+          dispatch(resetSignupForm())
+          history.push('/')
         }
       })
       .catch(console.log)
