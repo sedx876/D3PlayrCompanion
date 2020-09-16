@@ -89,3 +89,13 @@ export const signup = (credentials, history) => {
       .catch(console.log)
   }
 }
+export const logout = event => {
+  return dispatch => {
+    dispatch(clearCurrentUser())
+    //dispatch(clearCharacters())
+    return fetch('http://localhost:3001/api/v1/logout', {
+      credentials: "include",
+      method: "DELETE"
+    })
+  }
+}
