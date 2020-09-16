@@ -1,5 +1,5 @@
 import { resetLoginForm } from "./loginForm.js"
-import { resetSignupForm } from './signupForm'
+import { resetSignupForm } from './signupForm.js'
 
 export const setCurrentUser = user => {
   return {
