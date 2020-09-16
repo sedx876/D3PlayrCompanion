@@ -4,8 +4,10 @@ import Login from './components/Login'
 import Signup from './components/Signup'
 import Logout from './components/Logout'
 import Navbar from './components/Navbar'
+import Home from './components/Home'
 import { connect } from 'react-redux';
 import { getCurrentUser } from "./actions/currentUser.js"
+import { Route, Switch, withRouter } from 'react-router-dom'
 import 'bootswatch/dist/slate/bootstrap.min.css'
 
 class App extends React.Component {
@@ -22,6 +24,9 @@ class App extends React.Component {
         <Login />
         <Signup />
         <Logout />
+        <Switch>
+          <Route exact path='/home' component={Home} />
+        </Switch>
       </div>
     )
   }
