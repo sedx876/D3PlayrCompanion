@@ -1,8 +1,10 @@
 import React from 'react'
 import { connect } from 'react-redux'
+import { updateSignupForm } from "../actions/signupForm.js"
+import { signup } from "../actions/currentUser.js"
 
 
-const Signup = ({}) => {
+const Signup = ({ signupFormData, updateSignupForm, signup }) => {
 
   const handleUserInfoInputChange = event => {
     const { name, value } = event.target
@@ -16,7 +18,7 @@ const Signup = ({}) => {
 
   const handleSubmit = event => {
     event.preventDefault()
-    signup(signupFormData, history)
+    signup(signupFormData)
   }
 
   return (
@@ -30,4 +32,10 @@ const Signup = ({}) => {
   )
 }
 
-export default Signup
+const mapStateToProps = state => {
+  return {
+    signupFormData: state.signupForm
+  }
+}
+
+export default connect(mapStateToProps, { updateSignupForm, signup } )(Signup)
