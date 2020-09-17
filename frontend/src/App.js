@@ -2,7 +2,6 @@ import React from 'react';
 import './styles/App.css';
 import Login from './components/Login'
 import Signup from './components/Signup'
-import Logout from './components/Logout'
 import Navbar from './components/Navbar'
 import Home from './components/Home'
 import { connect } from 'react-redux';
@@ -10,7 +9,6 @@ import { getCurrentUser } from "./actions/currentUser.js"
 import { Route, Switch, withRouter } from 'react-router-dom'
 import 'bootswatch/dist/slate/bootstrap.min.css'
 import MyCharacters from './components/MyCharacters'
-import CharacterForm from './components/CharacterForm'
 import CharacterCard from './components/CharacterCard'
 import NewCharacterFormWrapper from './components/NewCharacterFormWrapper.js'
 import EditCharacterFormWrapper from './components/EditCharacterFormWrapper.js'
@@ -32,10 +30,11 @@ class App extends React.Component {
           <Route exact path='/characters' component={MyCharacters}/>
           <Route exact path='/characters/new' component={NewCharacterFormWrapper}/>
           <Route exact path='/characters/:id' render={props => {
-            const character = characters.find(character => character.id === props.match.params.id)
-            console.log(character)
-            return <CharacterCard character={character} {...props}/>
-          }
+              // I need to get ???
+              const character = characters.find(character => character.id === props.match.params.id)
+              console.log(character)
+              return <CharacterCard character={character} {...props}/>
+            }
           }/>
           <Route exact path='/characters/:id/edit' render={props => {
               const character = characters.find(character => character.id === props.match.params.id)

@@ -4,8 +4,8 @@ import {Link} from 'react-router-dom'
 const CharacterCard = ({ character }) => {
   return (
     character ? 
-    <div>
-    <div className="card text-white bg-dark mb-3" style="max-width: 20rem;">
+    
+    <div className="card text-white bg-dark mb-3">
       <div className="card-header">{character.attributes.title}</div>
         <div className="card-body">
           <h4 className="card-title">{character.attributes.character_klass}</h4>
@@ -30,7 +30,7 @@ const CharacterCard = ({ character }) => {
           <Link to={`/characters/${character.id}/edit`}>Edit this Character</Link>
   </div>
   </div>
-  </div> :
+   :
   <p>No Character Builds Yet</p>
   )
 }
