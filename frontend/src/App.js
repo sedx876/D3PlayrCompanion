@@ -10,6 +10,7 @@ import { getCurrentUser } from "./actions/currentUser.js"
 import { Route, Switch, withRouter } from 'react-router-dom'
 import 'bootswatch/dist/slate/bootstrap.min.css'
 import MyCharacters from './components/MyCharacters'
+import CharacterForm from './components/CharacterForm'
 
 class App extends React.Component {
 
@@ -18,17 +19,22 @@ class App extends React.Component {
   }
 
   render() {
-    const { loggedIn } = this.props
+    const { loggedIn, characters } = this.props
     return(
       <div className="App">
-      { loggedIn ? <MyCharacters /> : <Home/> }
+      {/* { loggedIn ? <MyCharacters /> : <Home/> } */}
+
       <Navbar />
+      { loggedIn ? <MyCharacters /> : <Home /> }
+      {/* <MyCharacters /> */}
+      <CharacterForm />
 
         {/* <Login />
         <Signup />
         <Logout /> */}
         <Switch>
-          <Route exact path='/home' component={Home} />
+        <Route exact path='/mycharacters' component={MyCharacters} /> 
+          <Route exact path='/' component={Home} />
           <Route exact path='/signup' render={({history})=><Signup history={history}/>}/>
           <Route exact path='/login' component={Login}/>
         </Switch>
@@ -40,8 +46,8 @@ class App extends React.Component {
 const mapStateToProps = state => {
   return ({
     loggedIn: !!state.currentUser,
-    
+    characters: state.myCharacters
   })
 }
 
-export default connect(mapStateToProps, { getCurrentUser })(App)
+export default withRouter(connect(mapStateToProps, { getCurrentUser })(App));

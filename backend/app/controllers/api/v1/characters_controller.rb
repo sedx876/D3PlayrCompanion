@@ -3,8 +3,15 @@ class Api::V1::CharactersController < ApplicationController
 
   
   def index
-      @characters = Character.all
+      #@characters = Character.all
+      if logged_in?
+      @characters = current_user.characters
       render json: CharacterSerializer.new(@characters)
+      else
+        render json: {
+          error: "You must be logged in to see characters"
+        }
+      end
   end
 
   
@@ -13,7 +20,7 @@ class Api::V1::CharactersController < ApplicationController
   end
 
   def create
-    @character = characters.build(character_params)
+    @character = current_user_characters.build(character_params)
     if @character.save
       render json:  CharacterSerializer.new(@character), status: :created
     else

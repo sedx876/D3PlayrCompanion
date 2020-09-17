@@ -4,7 +4,7 @@
 
 export const setMyCharacters = characters => {
   return {
-    types: "SET_MY_CHARACTERS",
+    type: "SET_MY_CHARACTERS",
     characters
   }
 }
