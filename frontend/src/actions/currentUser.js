@@ -82,7 +82,7 @@ export const signup = (credentials, history) => {
           alert(response.error)
         } else {
           dispatch(setCurrentUser(response.data))
-          //dispatch(getMyCharacters())
+          dispatch(getMyCharacters())
           dispatch(resetSignupForm())
           history.push('/')
         }

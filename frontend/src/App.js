@@ -11,6 +11,7 @@ import { Route, Switch, withRouter } from 'react-router-dom'
 import 'bootswatch/dist/slate/bootstrap.min.css'
 import MyCharacters from './components/MyCharacters'
 import CharacterForm from './components/CharacterForm'
+import CharacterCard from './components/CharacterCard'
 
 class App extends React.Component {
 
@@ -28,6 +29,7 @@ class App extends React.Component {
       { loggedIn ? <MyCharacters /> : <Home /> }
       {/* <MyCharacters /> */}
       <CharacterForm />
+      <CharacterCard />
 
         {/* <Login />
         <Signup />
