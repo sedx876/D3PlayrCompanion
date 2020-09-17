@@ -6,6 +6,25 @@ export const setMyCharacters = characters => {
     characters
   }
 }
+export const clearCharacters = () => {
+  return {
+    type: "CLEAR_CHARACTERS"
+  }
+}
+
+export const deleteCharacterSuccess = characterId => {
+  return {
+    type: "DELETE_CHARACTER",
+    characterId
+  }
+}
+
+export const updateCharacterSuccess = character => {
+  return {
+    type: "UPDATE_CHARACTER",
+    character
+  }
+}
 
 export const addCharacter = character => {
   return {
@@ -75,6 +94,71 @@ export const createCharacter = (characterData) => {
       } else {
         dispatch(addCharacter(resp.data))
         dispatch(resetCharacterForm())
+      }
+    })
+    .catch(console.log)
+  }
+}
+
+export const updateCharacter = (characterData) => {
+  return dispatch => {
+    const sendableCharacterData = {
+      title: characterData.title,
+      character_klass: characterData.characterKlass,
+      helm: characterData.helm,
+      shoulders: characterData.shoulders,
+      gloves: characterData.gloves,
+      chest_armor: characterData.chestArmor,
+      belt: characterData.belt,
+      pants: characterData.pants,
+      boots: characterData.boots,
+      bracers: characterData.bracers,
+      amulet: characterData.amulet,
+      ring_1: characterData.ring1,
+      ring_2: characterData.ring2,
+      weapon: characterData.weapon,
+      offhand: characterData.offhand,
+      gem_notes: characterData.gemNotes,
+      kanais_cube: characterData.kanaisCube,
+      active_skills: characterData.activeSkills,
+      passive_skills: characterData.passiveSkills,
+      general_build_notes: characterData.generalBuildNotes
+    }
+    return fetch(`http://localhost:3001/api/v1/characters/${characterData.characterId}`, {
+      credentials: 'include',
+      method: 'PATCH',
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify(sendableCharacterData)
+    })
+    .then(r => r.json())
+    .then(resp => {
+      if (resp.error) {
+        alert(resp.error)
+      } else {
+        dispatch(updateCharacterSuccess(resp.data))
+      }
+    })
+    .catch(console.log)
+  }
+}
+
+export const deleteCharacter = (characterId) => {
+  return dispatch => {
+    return fetch(`http://localhost:3001/api/v1/characters/${characterId}`, {
+      credentials: 'include',
+      method: 'DELETE',
+      headers: {
+        "Content-Type": "application/json"
+      },
+    })
+    .then(r => r.json)
+    .then(resp => {
+      if (resp.error) {
+        alert(resp.error)
+      } else {
+        dispatch(deleteCharacterSuccess(characterId))
       }
     })
     .catch(console.log)

@@ -21,7 +21,7 @@ const CharacterForm = ({ formData, updateCharacterForm, handleSubmit, userId, ch
       event.preventDefault()
       handleSubmit(formData)
     }}>
-      <input className="form-control col-sm-10" onChange={handleChange} placeholder='Title of Your Build' name='title' value={title} isRequired />
+      <input className="form-control col-sm-10" onChange={handleChange} placeholder='Title of Your Build' name='title' value={title} isrequired='true' />
       <br />
       <input className="form-control col-sm-10" onChange={handleChange} placeholder='Character Class EX: Demon Hunter..Necromancer...' name='characterKlass' value={characterKlass} />
       <br />

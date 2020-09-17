@@ -1,6 +1,6 @@
 import { resetLoginForm } from "./loginForm.js"
 import { resetSignupForm } from './signupForm.js'
-import { getMyCharacters } from './myCharacters.js'
+import { getMyCharacters, clearCharacters } from './myCharacters.js'
 
 export const setCurrentUser = user => {
   return {
@@ -93,7 +93,7 @@ export const signup = (credentials, history) => {
 export const logout = event => {
   return dispatch => {
     dispatch(clearCurrentUser())
-    //dispatch(clearCharacters())
+    dispatch(clearCharacters())
     return fetch('http://localhost:3001/api/v1/logout', {
       credentials: "include",
       method: "DELETE"
