@@ -56,7 +56,7 @@ export const login = (credentials, history) => {
           dispatch(setCurrentUser(response.data))
           dispatch(getMyCharacters())
           dispatch(resetLoginForm())
-          //history.push('/')
+          history.push('/')
         }
       })
       .catch(console.log)

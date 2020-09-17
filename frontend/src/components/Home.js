@@ -1,11 +1,15 @@
 import React, { Component } from 'react'
+import {Link} from 'react-router-dom'
 
-export default class Home extends Component {
-  render() {
+const Home = () => {
+  
     return (
       <div>
-       <h1>Welcome to the D3 Playr Companion</h1>
+        <h1>Welcome to the D3 Playr Companion</h1>
+        <Link to="/signup">Sign Up</Link> or <Link to="/login">Log In</Link>
       </div>
     )
   }
-}
+
+
+export default Home

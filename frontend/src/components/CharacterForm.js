@@ -2,6 +2,7 @@ import React from 'react'
 import { connect } from 'react-redux'
 import { updateCharacterForm } from '../actions/characterForm'
 
+
 const CharacterForm = ({ formData, updateCharacterForm, handleSubmit, userId, character, editMode }) => {
 
   const { title, characterKlass, helm, shoulders, gloves, 
@@ -14,6 +15,8 @@ const CharacterForm = ({ formData, updateCharacterForm, handleSubmit, userId, ch
     const { name, value } = event.target
     updateCharacterForm(name, value)
   }
+
+  
 
   return (
   <div className="card text-white bg-secondary">
@@ -61,7 +64,7 @@ const CharacterForm = ({ formData, updateCharacterForm, handleSubmit, userId, ch
       <br />
       <textarea className="form-control col-sm-10" onChange={handleChange} placeholder='Random Build Notes' name='generalBuildNotes' value={generalBuildNotes} />
       <br />
-      <input className="btn btn-secondary" type='submit' value={editMode ? 'Update Trip' : 'Create Character'} />
+      <input className="btn btn-secondary" type='submit' value={editMode ? 'Update Character' : 'Create Character'} />
     </form>
     </div>
   )

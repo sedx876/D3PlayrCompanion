@@ -19,20 +19,20 @@ class EditCharacterFormWrapper extends React.Component {
   }
 
   handleSubmit = (formData) => {
-    const { updateCharacter, character } = this.props
+    const { updateCharacter, character, history } = this.props
     updateCharacter({
       ...formData,
       characterId: character.id
-    }, )
+    }, history)
   }
 
   render() {
-    const { deleteCharacter, character } = this.props 
+    const { deleteCharacter, character, history } = this.props 
     const characterId = character ? character.id : null
     return <>
             <CharacterForm editMode handleSubmit={this.handleSubmit} />
             <br />
-            <button onClick={() => deleteCharacter(characterId)}>Delete this Build</button>
+            <button onClick={() => deleteCharacter(characterId, history)}>Delete this Build</button>
           </>
   }
 }

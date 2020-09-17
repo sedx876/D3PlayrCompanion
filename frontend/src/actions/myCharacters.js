@@ -54,7 +54,7 @@ export const getMyCharacters = () => {
   }
 }
 
-export const createCharacter = (characterData) => {
+export const createCharacter = (characterData, history) => {
   return dispatch => {
     const sendableCharacterData = {
       title: characterData.title,
@@ -94,13 +94,14 @@ export const createCharacter = (characterData) => {
       } else {
         dispatch(addCharacter(resp.data))
         dispatch(resetCharacterForm())
+        history.push(`/characters/${resp.data.id}`)
       }
     })
     .catch(console.log)
   }
 }
 
-export const updateCharacter = (characterData) => {
+export const updateCharacter = (characterData, history) => {
   return dispatch => {
     const sendableCharacterData = {
       title: characterData.title,
@@ -138,13 +139,14 @@ export const updateCharacter = (characterData) => {
         alert(resp.error)
       } else {
         dispatch(updateCharacterSuccess(resp.data))
+        history.push(`/characters/${resp.data.id}`)
       }
     })
     .catch(console.log)
   }
 }
 
-export const deleteCharacter = (characterId) => {
+export const deleteCharacter = (characterId, history) => {
   return dispatch => {
     return fetch(`http://localhost:3001/api/v1/characters/${characterId}`, {
       credentials: 'include',
@@ -159,6 +161,7 @@ export const deleteCharacter = (characterId) => {
         alert(resp.error)
       } else {
         dispatch(deleteCharacterSuccess(characterId))
+        history.push(`/characters`)
       }
     })
     .catch(console.log)
