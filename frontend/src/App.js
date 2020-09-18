@@ -30,7 +30,6 @@ class App extends React.Component {
           <Route exact path='/characters' component={MyCharacters}/>
           <Route exact path='/characters/new' component={NewCharacterFormWrapper}/>
           <Route exact path='/characters/:id' render={props => {
-              // I need to get ???
               const character = characters.find(character => character.id === props.match.params.id)
               console.log(character)
               return <CharacterCard character={character} {...props}/>
@@ -41,41 +40,11 @@ class App extends React.Component {
               return <EditCharacterFormWrapper character={character} {...props}/>
             }
           }/>
+          <Route exact path='/characters/cards' component={CharacterCard}/>
         </Switch>
       </div>
     )
   }
-
-//   render() {
-//     const { loggedIn, characters } = this.props
-//     return(
-//       <div className="App">
-//       {/* { loggedIn ? <MyCharacters /> : <Home/> } */}
-
-//       <Navbar />
-//       { loggedIn ? <MyCharacters /> : <Home /> }
-//       {/* <MyCharacters /> */}
-//       <CharacterForm />
-//       <CharacterCard />
-
-//         {/* <Login />
-//         <Signup />
-//         <Logout /> */}
-//         <Switch>
-//         <Route exact path='/mycharacters' component={MyCharacters} /> 
-//           <Route exact path='/' component={Home} />
-//           <Route exact path='/signup' render={({history})=><Signup history={history}/>}/>
-//           <Route exact path='/login' component={Login}/>
-//           <Route exact path='/characters/:id' render={props => {
-//             const character = characters.find(character => character.id === props.match.params.id)
-//             console.log(character)
-//             return <CharacterCard character={character} {...props} />
-//           }} />
-//         </Switch>
-//       </div>
-//     )
-//   }
-// }
 }
 
 const mapStateToProps = state => {

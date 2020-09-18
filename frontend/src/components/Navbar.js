@@ -11,7 +11,7 @@ const Navbar = ({ currentUser, loggedIn }) => {
     <div className="navbar navbar-expand-lg navbar-dark bg-primary">
       <NavLink exact activeClassName="active" to='/characters'>Characters</NavLink>
       <NavLink exact activeClassName="active" to='/characters/new'>New Character Build</NavLink>
-      { loggedIn ? <><p id="loggedin">Logged in as {currentUser.attributes.username}</p><Logout/></> : null}
+      { loggedIn ? <><p id="loggedin">Logged in as {currentUser.attributes.username}</p><Logout /></> : null}
     </div>
   )
 

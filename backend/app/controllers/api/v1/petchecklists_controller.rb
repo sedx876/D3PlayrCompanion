@@ -1,0 +1,2 @@
+class PetchecklistsController < ApplicationController
+end
