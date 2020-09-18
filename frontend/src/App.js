@@ -40,7 +40,7 @@ class App extends React.Component {
               return <EditCharacterFormWrapper character={character} {...props}/>
             }
           }/>
-          <Route exact path='/characters/cards' component={CharacterCard}/>
+          {/* <Route exact path='/characters/cards' component={CharacterCard}/> */}
         </Switch>
       </div>
     )

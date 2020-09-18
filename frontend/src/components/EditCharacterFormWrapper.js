@@ -31,8 +31,8 @@ class EditCharacterFormWrapper extends React.Component {
     const characterId = character ? character.id : null
     return <>
             <CharacterForm editMode handleSubmit={this.handleSubmit} />
-            <br />
-            <button onClick={() => deleteCharacter(characterId, history)}>Delete this Build</button>
+            
+            <button className="btn btn-primary" onClick={() => deleteCharacter(characterId, history)}>Delete this Character</button>
           </>
   }
 }

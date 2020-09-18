@@ -40,3 +40,7 @@
 .card {
   justify-content: center;
 }
+
+span {
+  font-weight: bolder;
+}
