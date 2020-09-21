@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom'
 const MyCharacters = props => {
   const characterCards = props.characters.length > 0 ?
   props.characters.map(c => (
-    <p key={c.id}><Link to={`/characters/${c.id}`}>{c.attributes.title}</Link></p>)) : 
+    <p className="card border-info mb-3" id="cCard" key={c.id}><Link to={`/characters/${c.id}`}>{c.attributes.title}</Link></p>)) : 
     null
 
   return characterCards

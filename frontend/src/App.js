@@ -7,7 +7,7 @@ import Home from './components/Home'
 import { connect } from 'react-redux';
 import { getCurrentUser } from "./actions/currentUser.js"
 import { Route, Switch, withRouter } from 'react-router-dom'
-import 'bootswatch/dist/slate/bootstrap.min.css'
+import 'bootswatch/dist/darkly/bootstrap.min.css'
 import MyCharacters from './components/MyCharacters'
 import CharacterCard from './components/CharacterCard'
 import NewCharacterFormWrapper from './components/NewCharacterFormWrapper.js'

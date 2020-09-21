@@ -30,3 +30,26 @@ span {
   color: #0bdbab;
   text-decoration: underline;
 }
+
+.card text-white bg-secondary {
+  display: block;
+  align-items: center;
+}
+
+.form-control {
+  display: block;
+  text-align: center;
+  margin-left: auto;
+
+  margin-right: auto;
+}
+
+#welcome{
+  color: #0bdbab;
+  text-decoration: none;
+}
+
+#cCard{
+  display: inline-block;
+  font-size: larger;
+}

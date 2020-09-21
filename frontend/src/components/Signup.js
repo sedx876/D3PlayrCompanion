@@ -23,11 +23,10 @@ const Signup = ({ signupFormData, updateSignupForm, signup }) => {
 
   return (
     <form className='form-group' onSubmit={handleSubmit}>
-      <input placeholder='username' value={signupFormData.username} name='username' type='text' onChange={handleUserInfoInputChange} />
+      <input className="form-control col-sm-4" placeholder='username' value={signupFormData.username} name='username' type='text' onChange={handleUserInfoInputChange} />
       <br />
-      <input placeholder="password" value={signupFormData.password} name="password" type="text" onChange={handleUserInfoInputChange} />
-      <br />
-      <input type="submit" value="Sign Up"/>
+      <input className="form-control col-sm-4" placeholder="password" value={signupFormData.password} name="password" type="text" onChange={handleUserInfoInputChange} />
+      <input className="btn btn-primary" type="submit" value="Sign Up"/>
     </form>
   )
 }

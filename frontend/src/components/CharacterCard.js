@@ -7,7 +7,7 @@ const CharacterCard = ({ character }) => {
 
 
   return (
-    <div className="card text-white bg-dark mb-3">
+    <div className="card border-info mb-3">
       <div className="card-header"><h3><span>{character.attributes.title}</span></h3></div>
         <div className="card-body">
           <h3 className="card-title"><span>Character Class:</span> {character.attributes.character_klass}</h3>
@@ -29,7 +29,7 @@ const CharacterCard = ({ character }) => {
           <p className="card-text"><span>Active Skills:</span> {character.attributes.active_skills}</p>
           <p className="card-text"><span>Passive Skills:</span> {character.attributes.passive_skills}</p>
           <p className="card-text"><span>General Build Notes:</span> {character.attributes.general_build_notes}</p>
-          <Link className="btn btn-primary" to={`/characters/${character.id}/edit`}>Edit or Delete this Character</Link>
+          <Link className="btn btn-outline-warning" to={`/characters/${character.id}/edit`}>Edit or Delete this Character</Link>
   </div>
   </div>
   
