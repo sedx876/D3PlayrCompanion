@@ -10,6 +10,7 @@ import { Route, Switch, withRouter } from 'react-router-dom'
 import 'bootswatch/dist/darkly/bootstrap.min.css'
 import MyCharacters from './components/MyCharacters'
 import CharacterCard from './components/CharacterCard'
+import Footer from './components/Footer'
 import NewCharacterFormWrapper from './components/NewCharacterFormWrapper.js'
 import EditCharacterFormWrapper from './components/EditCharacterFormWrapper.js'
 
@@ -43,6 +44,8 @@ class App extends React.Component {
           }/>
           {/* <Route exact path='/characters/cards' component={CharacterCard}/> */}
         </Switch>
+        
+        <Footer />
       </div>
     )
   }
