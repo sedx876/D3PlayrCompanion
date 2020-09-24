@@ -1,7 +1,7 @@
 import React from 'react'
 import CharacterForm from './CharacterForm'
-import { updateCharacter, deleteCharacter } from '../actions/myCharacters'
-import { setFormDataForEdit, resetCharacterForm } from '../actions/characterForm'
+import { updateCharacter, deleteCharacter } from '../../actions/myCharacters'
+import { setFormDataForEdit, resetCharacterForm } from '../../actions/characterForm'
 import { connect } from 'react-redux'
 
 class EditCharacterFormWrapper extends React.Component {

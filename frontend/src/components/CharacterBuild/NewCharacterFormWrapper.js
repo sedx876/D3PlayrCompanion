@@ -1,6 +1,6 @@
 import React from 'react'
 import CharacterForm from './CharacterForm'
-import { createCharacter } from '../actions/myCharacters'
+import { createCharacter } from '../../actions/myCharacters'
 import { connect } from 'react-redux'
 
 const NewCharacterFormWrapper = ({ createCharacter, history }) => {

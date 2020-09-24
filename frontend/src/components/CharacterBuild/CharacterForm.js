@@ -1,6 +1,6 @@
 import React from 'react'
 import { connect } from 'react-redux'
-import { updateCharacterForm } from '../actions/characterForm'
+import { updateCharacterForm } from '../../actions/characterForm'
 
 
 const CharacterForm = ({ formData, updateCharacterForm, handleSubmit, userId, character, editMode }) => {
