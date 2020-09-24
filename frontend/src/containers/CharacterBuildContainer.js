@@ -8,7 +8,7 @@ import { getCurrentUser } from "../actions/currentUser"
 import { Route, Switch, withRouter } from 'react-router-dom'
 import MyCharacters from '../components/CharacterBuild/MyCharacters'
 import CharacterCard from '../components/CharacterBuild/CharacterCard'
-import Footer from '../components/Footer'
+//import Footer from '../components/Footer'
 import NewCharacterFormWrapper from '../components/CharacterBuild/NewCharacterFormWrapper.js'
 import EditCharacterFormWrapper from '../components/CharacterBuild/EditCharacterFormWrapper.js'
 
@@ -43,7 +43,7 @@ class CharacterBuildContainer extends React.Component {
           {/* <Route exact path='/characters/cards' component={CharacterCard}/> */}
         </Switch>
         
-        <Footer />
+        {/* <Footer /> */}
       </div>
     )
   }

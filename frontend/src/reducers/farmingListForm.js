@@ -1,5 +1,6 @@
 const initialState = {
   name: '',
+  notes: '',
 }
 
 export default (state=initialState, action) => {

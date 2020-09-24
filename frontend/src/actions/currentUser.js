@@ -1,7 +1,7 @@
 import { resetLoginForm } from "./loginForm.js"
 import { resetSignupForm } from './signupForm.js'
 import { getMyCharacters, clearCharacters } from './myCharacters.js'
-
+import { getMyItems, clearItems } from './myFarmingList'
 export const setCurrentUser = user => {
   return {
     type: "SET_CURRENT_USER",
@@ -31,6 +31,7 @@ export const getCurrentUser = () => {
         } else {
           //console.log("here")
           dispatch(setCurrentUser(response.data))
+          dispatch(getMyItems())
           dispatch(getMyCharacters())
         }
       })
@@ -54,6 +55,7 @@ export const login = (credentials, history) => {
           alert(response.error)
         } else {
           dispatch(setCurrentUser(response.data))
+          dispatch(getMyItems())
           dispatch(getMyCharacters())
           dispatch(resetLoginForm())
           history.push('/')
@@ -82,6 +84,7 @@ export const signup = (credentials, history) => {
           alert(response.error)
         } else {
           dispatch(setCurrentUser(response.data))
+          dispatch(getMyItems())
           dispatch(getMyCharacters())
           dispatch(resetSignupForm())
           history.push('/')
@@ -94,6 +97,7 @@ export const logout = event => {
   return dispatch => {
     dispatch(clearCurrentUser())
     dispatch(clearCharacters())
+    dispatch(clearItems())
     return fetch('http://localhost:3001/api/v1/logout', {
       credentials: "include",
       method: "DELETE"

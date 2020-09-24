@@ -5,9 +5,10 @@ import { connect } from 'react-redux'
 
 const NewItemFormWrapper = ({ createItem, history }) => {
 
-  const handleSubmit = (formData) => {
+  const handleSubmit = (formData, userId) => {
     createItem({
       ...formData,
+      userId
     }, history)
   }
   return <FarmingListForm handleSubmit={handleSubmit} />

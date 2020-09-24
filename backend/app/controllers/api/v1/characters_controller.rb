@@ -8,7 +8,7 @@ class Api::V1::CharactersController < ApplicationController
       render json: CharacterSerializer.new(@characters)
       else
         render json: {
-          error: "You must be logged in to see characters"
+          error: "You must be logged in to see Characters"
         }
       end
   end

@@ -1,6 +1,5 @@
 import React from 'react'
 import ItemCard from '../components/FarmingList/ItemCard'
-import FarmingListForm from '../components/FarmingList/FarmingListForm'
 import MyFarmingList from '../components/FarmingList/MyFarmingList'
 import NewItemFormWrapper from '../components/FarmingList/NewItemFormWrapper'
 import EditItemFormWrapper from '../components/FarmingList/EditItemFormWrapper'
@@ -15,7 +14,7 @@ class FarmingListContainer extends React.Component {
   }
 
   render() {
-    const {items} = this.props
+    const {loggedIn, items} = this.props
     return (
       <div>
         <Switch>
@@ -44,4 +43,4 @@ const mapStateToProps = state => {
   })
 }
 
-export default withRouter(connect(mapStateToProps, {getCurrentUser})(FarmingListContainer));
+export default withRouter(connect(mapStateToProps, { getCurrentUser })(FarmingListContainer));
