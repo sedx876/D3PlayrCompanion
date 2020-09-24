@@ -6,8 +6,14 @@ import NewItemFormWrapper from '../components/FarmingList/NewItemFormWrapper'
 import EditItemFormWrapper from '../components/FarmingList/EditItemFormWrapper'
 import {connect} from 'react-redux'
 import {Route, Switch, withRouter} from 'react-router-dom'
+import { getCurrentUser } from "../actions/currentUser"
 
 class FarmingListContainer extends React.Component {
+
+  componentDidMount() {
+    this.props.getCurrentUser()
+  }
+
   render() {
     const {items} = this.props
     return (
@@ -33,8 +39,9 @@ class FarmingListContainer extends React.Component {
 
 const mapStateToProps = state => {
   return({
+  loggedIn: !!state.currentUser,
   items: state.myFarmingList
   })
 }
 
-export default withRouter(connect(mapStateToProps)(FarmingListContainer));
+export default withRouter(connect(mapStateToProps, {getCurrentUser})(FarmingListContainer));

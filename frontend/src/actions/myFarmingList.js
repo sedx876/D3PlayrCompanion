@@ -36,7 +36,8 @@ export const addItem = item => {
 
 export const getMyItems = () => {
   return dispatch => {
-    return fetch('http://localhost:3001/items', {
+    return fetch('http://localhost:3001/api/v1/items', {
+      credentials: 'include',
       method: 'GET',
       headers: {
         'Content-Type': 'application/json'
@@ -57,9 +58,12 @@ export const getMyItems = () => {
 export const createItem = (itemData, history) => {
   return dispatch => {
     const sendableItemData = {
-      name: itemData.name
+      name: itemData.name,
+      notes: itemData.notes,
+      user_id: itemData.userId
     }
-    return fetch('http://localhost:3001/items', {
+    return fetch('http://localhost:3001/api/v1/items', {
+      credentials: 'include',
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
@@ -83,9 +87,11 @@ export const createItem = (itemData, history) => {
 export const updateItem = (itemData, history) => {
   return dispatch => {
     const sendableItemData = {
-      name: itemData.name
+      name: itemData.name,
+      notes: itemData.notes
     }
-    return fetch(`http://localhost:3001/items/${itemData.itemId}`, {
+    return fetch(`http://localhost:3001/api/v1/items/${itemData.itemId}`, {
+      credentials: 'include',
       method: 'PATCH',
       headers: {
         'Content-Type': 'application/json'
@@ -107,7 +113,8 @@ export const updateItem = (itemData, history) => {
 
 export const deleteItem = (itemId, history) => {
   return dispatch => {
-    return fetch(`http://localhost:3001/items/${itemId}`, {
+    return fetch(`http://localhost:3001/api/v1/items/${itemId}`, {
+      credentials: 'include',
       method: 'DELETE',
       headers: {
         'Content-Type': 'application/json'
