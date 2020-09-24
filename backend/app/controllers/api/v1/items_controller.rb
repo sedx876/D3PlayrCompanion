@@ -4,7 +4,7 @@ class Api::V1::ItemsController < ApplicationController
   
   def index
       if logged_in?
-      @tems = current_user.items
+      @items = current_user.items
       render json: ItemSerializer.new(@items)
       else
         render json: {
