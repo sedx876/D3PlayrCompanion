@@ -1,6 +1,6 @@
 import React from 'react'
 import FarmingListForm from './FarmingListForm'
-import { createItem } from '../actions/myFarmingList'
+import { createItem } from '../../actions/myFarmingList'
 import { connect } from 'react-redux'
 
 const NewItemFormWrapper = ({ createItem, history }) => {

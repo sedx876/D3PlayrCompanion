@@ -22,6 +22,12 @@ const Navbar = ({ currentUser, loggedIn }) => {
       <li className="nav-item">
       <NavLink className="nav-link" exact activeClassName="active" to='/characters/new'>New Character Build</NavLink>
       </li>
+      <li className="nav-item">
+      <NavLink className="nav-link" exact activeClassName="active" to='/farminglist'>FarmingList</NavLink>
+      </li>
+      <li className="nav-item">
+      <NavLink className="nav-link" exact activeClassName="active" to='/farminglist/new'>New Item</NavLink>
+      </li>
     </ul>
     { loggedIn ? <><p id="loggedin">Logged in as {currentUser.attributes.username}</p><Logout /></> : null}
   </div>

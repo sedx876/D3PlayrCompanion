@@ -1,7 +1,7 @@
 import React from 'react'
 import FarmingListForm from './FarmingListForm'
-import {updateItem, deleteItem} from '../actions/myFarmingList'
-import {setFarmingFormDataForEdit, resetFarmingListForm} from '../actions/farmingListForm'
+import {updateItem, deleteItem} from '../../actions/myFarmingList'
+import {setFarmingFormDataForEdit, resetFarmingListForm} from '../../actions/farmingListForm'
 import {connect} from 'react-redux'
 
 class EditItemFormWrapper extends React.Component {
