@@ -1,25 +1,24 @@
 class Api::V1::ItemsController < ApplicationController
   before_action :set_item, only: [:show, :update, :destroy]
 
-  
   def index
-      if logged_in?
+    if logged_in?
       @items = current_user.items
       render json: ItemSerializer.new(@items)
-      else
-        render json: {
-          error: "You must be logged in to see your items"
-        }
-      end
+    else
+      render json: {
+        error: "You must be logged in to see items"
+      }
+    end
   end
 
-  
   def show
     render json: @item
   end
 
   def create
     @item = current_user.items.build(item_params)
+
     if @item.save
       render json:  ItemSerializer.new(@item), status: :created
     else
@@ -53,14 +52,12 @@ class Api::V1::ItemsController < ApplicationController
   end
 
   private
-
     # Use callbacks to share common setup or constraints between actions.
     def set_item
-      @character = Item.find(params[:id])
+      @item = Item.find(params[:id])
     end
 
-    def character_params
+    def item_params
       params.require(:item).permit(:name, :notes)
     end
-    
 end
