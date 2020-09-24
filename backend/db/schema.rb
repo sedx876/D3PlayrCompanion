@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_09_18_104853) do
+ActiveRecord::Schema.define(version: 2020_09_24_101656) do
 
   create_table "characters", force: :cascade do |t|
     t.string "title"
@@ -38,19 +38,11 @@ ActiveRecord::Schema.define(version: 2020_09_18_104853) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
-  create_table "petchecklists", force: :cascade do |t|
-    t.string "name"
-    t.boolean "done"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-  end
-
   create_table "users", force: :cascade do |t|
     t.string "username"
     t.string "password_digest"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.integer "petchecklist_id"
   end
 
 end
