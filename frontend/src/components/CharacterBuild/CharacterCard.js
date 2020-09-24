@@ -1,5 +1,6 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
+import '../../styles/characterCard.css'
 
 
 const CharacterCard = ({ character }) => {
@@ -7,7 +8,7 @@ const CharacterCard = ({ character }) => {
 
 
   return (
-    <div className="card border-info mb-3">
+    <div className="card text-white bg-dark mb-2">
       <div className="card-header"><h3><span>{character.attributes.title}</span></h3></div>
         <div className="card-body">
           <h3 className="card-title"><span>Character Class:</span> {character.attributes.character_klass}</h3>

@@ -1,11 +1,6 @@
 * {
+  background-color: #292b2c;
   margin: 5px;
   font-family: 'Kosugi Maru', sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}

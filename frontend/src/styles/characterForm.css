@@ -1,0 +1,29 @@
+.form-control {
+  display: block;
+  text-align: center;
+  margin-left: auto;
+
+  margin-right: auto;
+}
+
+#root > div > div.CharacterBuild > div > form > input.btn.btn-outline-warning {
+  display: block;
+  justify-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* .form-group {
+  display: block;
+  justify-items: center;
+  margin-left: auto;
+
+  margin-right: auto;
+} */
+
+#root > div > div.CharacterBuild > button{
+  display: block;
+  justify-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}

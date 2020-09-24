@@ -13,7 +13,7 @@ const FarmingListForm = ({ formData, updateFarmingListForm, handleSubmit, editMo
   }
 
   return (
-    <div className="card text-white bg-secondary">
+    <div className="card text-white bg-dark">
       <form className="form-group"
       onSubmit={event => {
         event.preventDefault()

@@ -1,5 +1,6 @@
 import React from 'react'
 import { connect } from 'react-redux'
+import '../../styles/characterForm.css'
 import { updateCharacterForm } from '../../actions/characterForm'
 
 
@@ -19,7 +20,7 @@ const CharacterForm = ({ formData, updateCharacterForm, handleSubmit, userId, ch
   
 
   return (
-  <div className="card text-white bg-secondary">
+  <div className="card text-white bg-dark">
     <form className="form-group"
       onSubmit={event => {
       event.preventDefault()

@@ -44,23 +44,8 @@ span {
   margin-right: auto;
 }
 
-#welcome{
-  color: #0bdbab;
-  text-decoration: none;
-}
-
 #cCard{
   display: inline-block;
   font-size: larger;
 }
 
-.footer {
-  position: relative;
-  left: 
-  0;
-  bottom: 0;
-  width: 100%;  
-  background-color: #292b2c;
-  color: white;
-  text-align: center;
-}
