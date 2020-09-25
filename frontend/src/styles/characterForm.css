@@ -13,14 +13,6 @@
   margin-right: auto;
 }
 
-/* .form-group {
-  display: block;
-  justify-items: center;
-  margin-left: auto;
-
-  margin-right: auto;
-} */
-
 #root > div > div.CharacterBuild > button{
   display: block;
   justify-items: center;

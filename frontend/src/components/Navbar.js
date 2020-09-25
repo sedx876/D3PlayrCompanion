@@ -2,6 +2,7 @@ import React from 'react'
 import { connect } from 'react-redux'
 import { NavLink } from 'react-router-dom'
 import Logout from './Users/Logout'
+import '../styles/Navbar.css'
 
 
 
@@ -20,13 +21,13 @@ const Navbar = ({ currentUser, loggedIn }) => {
       <NavLink className="nav-link" exact activeClassName="active" to='/characters'>Characters</NavLink>
       </li>
       <li className="nav-item">
-      <NavLink className="nav-link" exact activeClassName="active" to='/characters/new'>New Character Build</NavLink>
+      <NavLink className="nav-link" exact activeClassName="active" to='/characters/new'>Add New Character Build</NavLink>
       </li>
       <li className="nav-item">
-      <NavLink className="nav-link" exact activeClassName="active" to='/farminglist'>FarmingList</NavLink>
+      <NavLink className="nav-link" exact activeClassName="active" to='/farminglist'>Farming List</NavLink>
       </li>
       <li className="nav-item">
-      <NavLink className="nav-link" exact activeClassName="active" to='/farminglist/new'>New Item</NavLink>
+      <NavLink className="nav-link" exact activeClassName="active" to='/farminglist/new'>Add Item to Farming List</NavLink>
       </li>
     </ul>
     { loggedIn ? <><p id="loggedin">Logged in as {currentUser.attributes.username}</p><Logout /></> : null}

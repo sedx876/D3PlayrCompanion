@@ -1,3 +1,14 @@
 .card text-white bg-dark {
   display: block;
 }
+
+span{
+  text-decoration: underline;
+}
+
+#root > div > div.CharacterBuild > div > div.card-body > a{
+  display: block;
+  /* justify-items: center; */
+  margin-left: auto;
+  margin-right: auto;
+}

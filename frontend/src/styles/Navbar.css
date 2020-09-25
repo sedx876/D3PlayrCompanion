@@ -1,0 +1,8 @@
+#root > div > div.CharacterBuild > nav{
+  background-color: #292b2c;
+}
+
+#navbarColor01 > form > input{
+  background-color: #0bdbab;
+  color: black
+}
