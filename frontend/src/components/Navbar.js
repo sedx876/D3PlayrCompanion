@@ -17,6 +17,9 @@ const Navbar = ({ currentUser, loggedIn }) => {
   </button>
   <div className="collapse navbar-collapse" id="navbarColor01">
     <ul className="navbar-nav mr-auto">
+    <li className="nav-item">
+      <NavLink className="nav-link" exact activeClassName="active" to='/about'>About</NavLink>
+      </li>
       <li className="nav-item">
       <NavLink className="nav-link" exact activeClassName="active" to='/characters'>Characters</NavLink>
       </li>

@@ -1,0 +1,10 @@
+h6{
+  text-decoration: underline;
+  font-weight: 900;
+  color: crimson;
+}
+
+h5{
+  text-decoration: underline wavy;;
+  font-weight: 900;
+}

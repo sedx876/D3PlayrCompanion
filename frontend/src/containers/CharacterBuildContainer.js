@@ -3,6 +3,7 @@ import Login from '../components/Users/Login'
 import Signup from '../components/Users/Signup'
 import Navbar from '../components/Navbar'
 import Home from '../components/Home'
+import About from '../components/About'
 import { connect } from 'react-redux';
 import { getCurrentUser } from "../actions/currentUser"
 import { Route, Switch, withRouter } from 'react-router-dom'
@@ -24,6 +25,7 @@ class CharacterBuildContainer extends React.Component {
       <div className="CharacterBuild">
         { loggedIn ? <Navbar /> : <Home />}
         <Switch>
+          <Route exact path='/about' component={About}/>
           <Route exact path='/home' component={Home}/>
           <Route exact path='/signup' render={({history}) =><Signup history={history}/>}/>
           <Route exact path='/login' component={Login}/>
