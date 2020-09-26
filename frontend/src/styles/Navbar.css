@@ -3,6 +3,18 @@
 }
 
 #navbarColor01 > form > input{
-  background-color: #0bdbab;
-  color: black
+  background-color: crimson;
+  color: white;
+}
+
+.nav-link{
+  color: crimson;
+}
+
+#navbarColor01 > ul > li > a{
+  color: crimson;
+}
+
+#loggedin{
+  color: crimson;
 }
