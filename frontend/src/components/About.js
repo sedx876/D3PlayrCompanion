@@ -8,11 +8,11 @@ import '../styles/About.css'
 
 const About = () => {
   return (
-    <div class="card text-white bg-dark mb-3">
-      <div class="card-body">
-        <h4 class="card-title">About Diablo 3-The Game</h4>
+    <div className="card text-white bg-dark mb-3">
+      <div className="card-body">
+        <h4 className="card-title">About Diablo 3-The Game</h4>
 
-        <p class="card-text">Diablo III is a hack-and-slash action role-playing game 
+        <p className="card-text">Diablo III is a hack-and-slash action role-playing game 
       developed and published by Blizzard Entertainment as the 
       third installment in the Diablo franchise. It was released 
       for Microsoft Windows and OS X in May 2012, the PlayStation 
@@ -45,9 +45,10 @@ const About = () => {
       and is currently in development.</p>
 
       <br />
-      <br />
 
-      <h5>Game Play</h5>
+      <br />
+      <h5>&#9760;Game Play&#9760;</h5>
+      <br />
 
       <p>Much like in Diablo and Diablo II, the quality and 
       attributes of equipment are randomized. In addition to base 
@@ -71,7 +72,7 @@ const About = () => {
       with an in-game damage effect. The developers sought to 
       make the game run on a wide range of systems without 
       requiring DirectX 10. Diablo III uses a custom 3D game 
-      engine[4] in order to present an overhead view to the 
+      engine in order to present an overhead view to the 
       player, in a somewhat similar way to the isometric view 
       used in previous games in the series. Enemies utilize 
       the 3D environment as well, in ways such as crawling up 
@@ -112,7 +113,7 @@ const About = () => {
       <h6>Hardcore Mode</h6>
 
       <p>As in Diablo II, Diablo III gives players the choice to 
-      make hardcore characters.[12] Players are required to first 
+      make hardcore characters. Players are required to first 
       level up a regular character to level 10 before they have 
       the option to create new Hardcore characters. Hardcore 
       characters cannot be resurrected; instead they become 
@@ -169,7 +170,7 @@ const About = () => {
       players spend in-game gold and another where players 
       could buy or sell virtual items for real-world money. 
       The real-money auction house was not available in Hardcore 
-      mode.[19] Prior to release, Blizzard stated that nearly 
+      mode. Prior to release, Blizzard stated that nearly 
       everything that drops on the ground, including gold, could 
       be traded with other players either directly or through 
       the auction house system. Aside from certain bound on 
@@ -208,7 +209,7 @@ const About = () => {
       But the solution is "not as easy as that." On 
       September 17, 2013, Blizzard stated that both the gold and 
       real-money auction houses would be shut down on 
-      March 18, 2014.[26] Players had until June 24, 2014 to 
+      March 18, 2014. Players had until June 24, 2014 to 
       claim gold and items from the completed tab on the auction 
       house interface.</p>
 
@@ -219,7 +220,7 @@ const About = () => {
       February 2013. The Brawling system provides a simple free 
       for all area where between two and four characters can 
       fight and defeat each other as long as they like, but 
-      without any scores or damage being tracked.[28] Players can 
+      without any scores or damage being tracked. Players can 
       participate by choosing from their existing characters, 
       with access to all of the gear and skill they have 
       gathered from playing the game in single-player or 
@@ -228,7 +229,7 @@ const About = () => {
       <p>PvP content for Diablo III had been discussed throughout 
       the game's development, but on March 9, 2012, Blizzard 
       announced that PvP had been delayed and would not be 
-      included with the game's release.[29] Lead designer Jay 
+      included with the game's release. Lead designer Jay 
       Wilson said in a post on Battle.net that the PvP Arena 
       system would arrive in a post-release patch; it would 
       include multiple Arena maps with themed locations and 
@@ -240,7 +241,7 @@ const About = () => {
       canceled, because it did not have enough depth. Instead a 
       simple PvP system would be added for the time being. That 
       PvP mode was initially named Dueling, and was renamed to 
-      Brawling before release.[31] Although the PvP systems 
+      Brawling before release. Although the PvP systems 
       initially outlined were not released, Blizzard stated that 
       they would add other full-featured PvP systems in a free 
       future content patch. In a May 2013 interview, Diablo III 
@@ -248,6 +249,103 @@ const About = () => {
       looking to see how the Brawling PvP evolves, while 
       they "continue to work on figuring out something more 
       objective-based."</p>
+
+      <h6>Seasons</h6>
+
+      <p>Patch 2.1 introduced seasons to the game, which are 
+      the equivalent of ladders from Diablo II. In each 
+      season, players start with a new level 1 character and 
+      game performance is compared on a leaderboard. Each season 
+      has exclusive Legendary items, which will be awarded for 
+      good Ladder performance and through Tiered Rifts and each 
+      season includes Conquests, which are seasonal achievements 
+      for the first 1,000 to complete them on each server. 
+      Seasons last for around three months. When a season ends 
+      all seasonal characters are transferred to the main 
+      account.</p>
+
+      <h6>Adventure Mode</h6>
+
+      <p>Adventure Mode allows players to explore every region 
+      currently available in the game, without having to create 
+      new games. New objectives (including Bounties and Nephalem 
+      Rifts) and the Mystic NPC are also available to the 
+      players, and these features can only be found in Adventure 
+      Mode. As soon as a player completes the entire campaign 
+      (including the newly added Act V) and defeats the final 
+      boss Malthael, Adventure Mode is unlocked and available to 
+      all characters on the player's account, including new 
+      seasonal characters.</p>
+
+      <h6>Bounties</h6>
+
+      <p>Players are able to complete five random Bounties for 
+      each act when playing in Adventure Mode. Bounties are 
+      random missions that may require players to hunt down a 
+      specific enemy, clear a specific area, slay a certain 
+      number of enemies, or complete a certain event, for 
+      example cleanse a cursed chest or a cursed shrine. Upon 
+      completion of Bounties, players will be rewarded with 
+      certain amount of gold, loots as well as crystalline 
+      blood shards, which can be traded for powerful items. 
+      Once players complete all five Bounties designated to 
+      one act, they will be rewarded with a Horadric Cache, 
+      which contains random loots and rewards such as gems, 
+      crafting materials, crafting recipes, and equipment. As 
+      of patch 2.3, Rift Key Fragments are no longer in the 
+      game, and thus have been removed from Horadric caches. 
+      Additional bounty areas were added with the Ruins of 
+      Sescheron in Act III (patch 2.3), Greyhollow Island in 
+      Act V (patch 2.4), the Shrouded Moors and the Temple of 
+      the Firstborn in Act II, and the Realms of Fate in Act 
+      IV (both patch 2.6).</p>
+
+      <h6>Nephalem Rifts</h6>
+
+      <p>Nephalem Rifts are dungeons in Adventure Mode that 
+      consist of randomized regions and encounters. Players 
+      fight enemies and explore areas drawn randomly from all 
+      acts. As of patch 2.3 Nephalem rifts can be opened for 
+      free and no longer require Rift Keystone Fragments 
+      (which have been removed from the game). Players will 
+      also find "pylons" that grant players powerful abilities 
+      during exploration of the Rifts. In the first major 
+      content patch Greater Rifts were added where the 
+      difficulty increases each time you complete the rift 
+      within the time limit. The final boss in each Nephalem 
+      Rift has a chance of dropping a Greater Rift Keystone, 
+      which can be used to open these Greater Rifts.</p>
+
+      <h6>Kanai's Cube</h6>
+
+      <p>Added in patch 2.3, Kanai's Cube is an improvement on 
+      the Horadric Cubes used in Diablo II. In Adventure Mode, 
+      players will speak to the ghost of Zoltun Kulle in town, 
+      at which point he will direct them to the Ruins of 
+      Sescheron in Act III to locate the cube. Once found, the 
+      cube is available to all characters of the type that 
+      finds it (normal or Hardcore; the first character in a 
+      new Season must re-acquire it regardless of whether their 
+      normal or Hardcore characters have already found it). 
+      With certain crafting material combinations, the cube can 
+      be used to extract legendary powers (marked in orange 
+      text in the item's stats), upgrade rare items to 
+      legendary, remove level requirements on items, and other 
+      abilities.</p>
+
+      <h6>The Darkening of Tristram Event</h6>
+
+      <p>To commemorate the 20th anniversary of the original 
+      Diablo, Blizzard announced at BlizzCon on November 4, 
+      2016, that they will add a remade version of the original 
+      game (complete with its 16-level dungeon and original 
+      bosses) to Diablo III; this will also include "retro 
+      touches" such as the option for the pixelated graphics 
+      and the eight-direction movement limitations of the 
+      original game, while being played with the Diablo III 
+      classes. The event, known as "the Darkening of 
+      Tristram", went live on January 4, 2017, and ran until 
+      January 31.</p>
 
       <h6>Character Classes</h6>
 
@@ -362,7 +460,9 @@ const About = () => {
       (the Monk), Xul (the Necromancer), Nazeebo 
       (the Witch Doctor), and Li-Ming (the Wizard).</p>
 
-      <h5>Plot</h5>
+      <br />
+      <h5>&#9760;Plot&#9760;</h5>
+      <br />
 
       <p>The game takes place in Sanctuary, the dark fantasy 
       world of the Diablo Series, twenty years after the events 
@@ -563,39 +663,119 @@ const About = () => {
       Malthael kills all but one of the Horadrim, incapacitates 
       Tyrael in the process and steals the Black Soulstone.</p>
 
-      <h5>Development</h5>
+      <p>Tyrael sends the surviving Horadrim, Lorath Nahr, to 
+      locate the Nephalem. Nahr encounters the Nephalem outside 
+      Westmarch City, which has been overrun by the Reapers, 
+      Malthael's army of enslaved spirits and renegade angels. 
+      With the gates blocked, the Nephalem fights through the 
+      city sewers to the Zakarum cathedral in the city center, 
+      where they encounter Tyrael. Tyrael reveals that with 
+      Diablo gone, Malthael sees humanity as a race of demons 
+      based on their descent from the original Nephalem, the 
+      offspring of angels and demons; by wiping out humanity, 
+      Malthael hopes to end the Eternal Conflict, the long war 
+      between Heaven and Hell. A sliver broke off from the Black 
+      Soulstone when Malthael took it, and Tyrael attempts to use 
+      it to discover Malthael's plans. The Reapers deploy two 
+      soul crucibles into Westmarch City to claim the souls of the 
+      dead, and the Nephalem locates and destroys them, earning 
+      the ire of Urzael, Malthael's chief lieutenant, who awaits 
+      the hero in Westmarch Heights. The Nephalem tracks Urzael 
+      down to the Tower of Korelan and defeats him in a gruesome 
+      battle.</p>
+
+      <p>The Nephalem learns from Myriam Jahzia, a mystic 
+      rescued during the attack against the soul crucibles, that 
+      Adria (the witch of Tristram from the original game, who 
+      is revealed to have been a servant of Diablo in Diablo III) 
+      is in Westmarch seeking to locate the Black Soulstone and 
+      resurrect her master again. Lorath decides to accompany the 
+      hero, then learns that Adria sealed the tomb's entrance with 
+      a rock slide, so he suggests unlocking the guide-stones to 
+      open the correct passageway. Travelling into the ancient 
+      ruins in the Blood Marsh outside Westmarch, the Nephalem 
+      confronts Adria, who manages to locate Malthael at the 
+      Pandemonium Fortress (last seen in Diablo II), built in the 
+      realm between Heaven and Hell to watch over the Worldstone. 
+      She then transforms into a winged demonic creature, claiming 
+      that Diablo sent her a vision of his return at the hands of 
+      the Nephalem, after which the Nephalem slays her. Upon 
+      learning of Malthael's location, Tyrael takes the Nephalem 
+      back into the High Heavens, where they find the Pandemonium 
+      Gate under attack by Malthael's Reapers. Upon defeating the 
+      attackers, they are met by Imperius, Aspect of Valor and 
+      the commander of Heaven's armies, who reluctantly admits 
+      that Malthael must be stopped and leads the Nephalem into 
+      the Realm of Pandemonium. Imperius directs the Nephalem to 
+      use an ancient battering ram to breach the fortress gates, 
+      using siege runes held by the demons trapped there.</p>
+
+      <p>Tyrael arrives just as the Nephalem prepares to 
+      activate the ram, revealing that he has discovered 
+      Malthael's plan; he intends to use the Black Soulstone to 
+      consume all demonic essence in Sanctuary, including that 
+      which makes up the bloodline of humanity, leading to its 
+      extinction. After breaching the gates with four hits with 
+      the battering ram, Tyrael informs the Nephalem that they 
+      must become "one with death", as Malthael is, in order to 
+      defeat him. Inside the fortress, the Nephalem encounters 
+      a figure from their past (dependent on their class) who 
+      directs them to unlock the soul prison kept in its depths. 
+      The Nephalem channels the spirits from the prison and takes 
+      on an aspect of death themselves, before moving on to 
+      defeat the guardians that bar the way to Malthael's sanctum 
+      at the heart of the fortress.</p>
+
+      <p>The Nephalem holds their own against Malthael for a 
+      time, until he shatters the Black Soulstone and takes the 
+      power of the Seven Evils within himself. The Nephalem 
+      ultimately triumphs, striking down Malthael and saving 
+      mankind from his attempt to exterminate it; however, 
+      Malthael's death frees the Seven Evils, shattering the 
+      Black Soulstone; fulfilling Adria's final prophecy. As 
+      Tyrael and Imperius look on after the Nephalem's victory, 
+      Tyrael sees the Nephalem in a new light: a protector of 
+      the innocent who can confront the most powerful champions 
+      of Heaven and Hell alike. Yet in the end the Nephalem 
+      still has a mortal heart that can be corrupted, and 
+      Tyrael wonders if the Nephalem will remain the savior, 
+      or become the doom of all creation.</p>
+
+      <br />
+      <h5>&#9760;Development&#9760;</h5>
+      <br />
 
       <p>Development on Diablo III began in 2001 when Blizzard 
       North was still in operation, and the game was announced 
       on June 28, 2008, at the Blizzard Worldwide Invitational 
-      in Paris, France.[9] The original artistic design differed 
+      in Paris, France. The original artistic design differed 
       from that shown at Blizzard Worldwide Invitational 2008 
       demonstration, and had undergone three revisions before 
       reaching the standards felt necessary by the team behind 
-      Diablo III.[citation needed] It was announced that the 
+      Diablo III. It was announced that the 
       game would be simultaneously released on both Windows and 
-      macOS platforms,[9] and would require a constant internet 
+      macOS platforms, and would require a constant internet 
       connection to play, even for single-player mode.</p>
 
       <p>The proprietary engine incorporates Blizzard's custom 
       in-house physics, a change from the original usage of 
-      Havok's physics engine,[47] and features destructible 
+      Havok's physics engine, and features destructible 
       environments with an in-game damage effect. Diablo III's 
       lead designer was Jay Wilson, a former Relic Entertainment 
       designer credited with work on Warhammer 40,000: Dawn of 
       War and Company of Heroes, as well as Blood II: The Chosen 
-      for Monolith Productions.[48] The lead world designer was 
+      for Monolith Productions. The lead world designer was 
       Leonard Boyarsky, one of the six co-creators of 
       Fallout.</p>
 
       <p>On May 9, 2011, Blizzard announced that the game was 
       expected to be released for external beta testing in Q3 of 
-      2011.[50] On September 7, 2011, Blizzard community manager 
+      2011. On September 7, 2011, Blizzard community manager 
       Bashiok confirmed the start of the closed public beta test 
       of the game with limited external testing by employees 
       and their families. Testers were not restricted by a 
-      non-disclosure agreement.[51] The beta began on 
-      April 20, 2012, and closed on May 1, 2012.[52] Following 
+      non-disclosure agreement. The beta began on 
+      April 20, 2012, and closed on May 1, 2012. Following 
       the beta, the game officially released for Windows and 
       OS X on May 15, 2012.</p>
 
@@ -625,7 +805,7 @@ const About = () => {
       any level from 0 to 10, with each level of Monster Power 
       increasing the damage, health points, experience point 
       yield and loot drop rates beyond the base value for a 
-      given difficulty tier.[57] The first PvP addition to the 
+      given difficulty tier. The first PvP addition to the 
       game was in February 2013, as part of patch 1.0.7; a simple 
       free-for-all system called "Brawling" and multiple item 
       crafting options.</p>
@@ -642,7 +822,7 @@ const About = () => {
 
       <p>On January 10, 2012, Blizzard community manager Bashiok 
       tweeted "Yup. Josh Mosqueira is lead designer for the 
-      Diablo III console project"[60] however a Blizzard 
+      Diablo III console project" however a Blizzard 
       spokesperson later clarified that Bashiok's tweet was only 
       "intended as a confirmation that Blizzard is actively 
       exploring the possibility of developing a console version 
@@ -651,12 +831,12 @@ const About = () => {
 
       <p>At Sony's Press Conference on February 20, 2013, Chris 
       Metzen announced that Diablo III would release on both 
-      PlayStation 3 and PlayStation 4.[62] Activision Blizzard 
+      PlayStation 3 and PlayStation 4. Activision Blizzard 
       stated in their first-quarter 2013 earnings report, that 
       the PlayStation 3 version of Diablo III would be released 
-      in 2013.[63] On June 6, 2013, Blizzard announced that both 
+      in 2013. On June 6, 2013, Blizzard announced that both 
       the PlayStation 3 and Xbox 360 port of the game would be 
-      released on September 3, 2013.[64] A PS3 version of the 
+      released on September 3, 2013. A PS3 version of the 
       game was published and localized by Square Enix in Japan, 
       released there on January 30, 2014.</p>
 
@@ -668,7 +848,7 @@ const About = () => {
       In May 2014, Blizzard announced that Diablo III: Ultimate 
       Evil Edition would be released on August 19, bringing the 
       game to the PlayStation 4, Xbox One, PlayStation 3, and 
-      Xbox 360.[67] The game runs at a display resolution of 
+      Xbox 360. The game runs at a display resolution of 
       1080p on the PlayStation 4 and Xbox One.</p>
 
       <p>On June 27, 2017, Diablo III: Eternal Collection, 
@@ -693,10 +873,10 @@ const About = () => {
       and an improved Paragon leveling system which is 
       account-wide and does not have a level cap. Reaper of Souls 
       was released on March 25, 2014, for the Windows and macOS 
-      versions of Diablo III.[73] The expansion pack content was 
+      versions of Diablo III. The expansion pack content was 
       released as part of the Diablo III: Ultimate Evil Edition 
       version for consoles on August 19 for the PlayStation 4, 
-      Xbox One, PlayStation 3, and Xbox 360.[67] That edition 
+      Xbox One, PlayStation 3, and Xbox 360. That edition 
       expanded the base Diablo III game on the PlayStation 3 and 
       Xbox 360, and brought the game for the first time to the 
       PlayStation 4 and Xbox One. A second expansion was being 
@@ -718,7 +898,7 @@ const About = () => {
       composition was used in the cinematic teaser trailer of 
       the game. The Tristram theme from the first Diablo, also 
       used in the second game, is present in Diablo III with 
-      some changes.[citation needed]. Irish choral ensemble 
+      some changes. Irish choral ensemble 
       Anúna also feature on the soundtrack. Brower stated 
       that "Working somewhat against conventional expectations, 
       Hell is a beautiful and seductive sound, provided by 
@@ -727,7 +907,9 @@ const About = () => {
       the game's release, as well as part of the Collector's 
       Edition of the game.</p>
 
-      <h5>Marketing and Release</h5>
+      <br />
+      <h5>&#9760;Marketing and Release&#9760;</h5>
+      <br />
 
       <p>Diablo III was released on May 15, 2012. Players had 
       the options to buy one of two retail boxed versions, a 
@@ -735,7 +917,7 @@ const About = () => {
       pre-order directly from Battle.net and download the 
       installer in advance. On May 14, 2012, players who bought 
       the downloadable version from Battle.net could install 
-      the rest of the game including patches.[78] On 
+      the rest of the game including patches. On 
       May 15, 2012, the retail version could be bought from 
       stores doing midnight launches such as GameStop. The 
       Diablo III Battle.net servers went live at this point, 
@@ -745,7 +927,7 @@ const About = () => {
       the error 37 which reads; "The servers are busy at this 
       time. Please try again later". These issues made the game 
       unplayable for those affected, while some others 
-      experienced in-game bugs.[79][80] Despite assurances 
+      experienced in-game bugs. Despite assurances 
       from Blizzard that the problems leading to the connection 
       errors during Diablo III's launch had been resolved, 
       Eurogamer reported on May 31, 2012, that these errors 
@@ -791,7 +973,9 @@ const About = () => {
       Starter Edition became available to all users a few months 
       after release on August 15, 2012.</p>
 
-      <h5>Reception</h5>
+      <br />
+      <h5>&#9760;Reception&#9760;</h5>
+      <br />
 
       <p>Diablo III received "generally positive reviews" from 
       critics, according to review aggregator Metacritic. 
@@ -804,7 +988,7 @@ const About = () => {
       works for your play-style. It's a vastly superior way to 
       handle character abilities", and praised the overall 
       gameplay, stating "the new systems really do make it a lot 
-      easier to enjoy Diablo III".[107] IGN further praised the 
+      easier to enjoy Diablo III". IGN further praised the 
       game's new gameplay design, in particular the rune and 
       loot systems, the randomly generated levels and the game's 
       enjoyable unpredictability. It stated the game's feel is 
@@ -825,7 +1009,7 @@ const About = () => {
       <p>Users have voiced criticism about the game's strong 
       digital rights management which requires what is known as 
       persistent online authentication, resulting in the lack of 
-      an offline single-player mode.[111] Erik Kain, a Forbes 
+      an offline single-player mode. Erik Kain, a Forbes 
       contributing writer, stated that the requirement to remain 
       online is not necessary for single-player mode and that 
       Blizzard is abusing its position as a "juggernaut" and is 
@@ -845,12 +1029,12 @@ const About = () => {
       steps in game availability. William Usher, the article's 
       author said, "Journalists should have been acknowledging 
       consumer distaste rather than fueling it with pro-corporate 
-      pandering."[113] While Gaming Blend disliked the 
+      pandering." While Gaming Blend disliked the 
       always-online DRM, it did give the game a positive review. 
       It stated the game includes interesting opportunities for 
       experimentation and has great appeal for replaying over 
       and over. The review concluded the game is "smooth and 
-      entertaining".[114] A GameArena critic questioned how 
+      entertaining". A GameArena critic questioned how 
       Blizzard managed to "fail so spectacularly at creating 
       reliable networking for Diablo 3" before going on to point 
       out the lack of competitive multiplayer.</p>
@@ -877,7 +1061,7 @@ const About = () => {
       "Outstanding Achievement in Online Gameplay", "Outstanding 
       Achievement in Original Music Composition" and "Outstanding 
       Achievement in Sound Design" at the 16th Annual D.I.C.E. 
-      Awards.[120] A year later at the 17th Annual D.I.C.E. 
+      Awards. A year later at the 17th Annual D.I.C.E. 
       Awards, the 2013 console version of Diablo III won the 
       award for "Role-Playing/Massively Multiplayer Game of the 
       Year", along with a nomination for "Online Game of 
@@ -887,28 +1071,30 @@ const About = () => {
 
       <p>Before its release, Diablo III broke several presale 
       records and became the most pre-ordered PC game to date on 
-      Amazon.[122] Activision Blizzard reported that Diablo III 
+      Amazon. Activision Blizzard reported that Diablo III 
       had broken the one-day PC sales records, accumulating over 
       3.5 million sales in the first 24 hours after release and 
       over 6.3 million sales in its first week, including the 
       1.2 million people who obtained Diablo III through the 
-      World of Warcraft annual pass.[123] On its first day, the 
+      World of Warcraft annual pass. On its first day, the 
       game amassed 4.7 million players worldwide, an estimate 
       which includes those who obtained the game via the World 
-      of Warcraft annual pass.[123] In its 2012 second quarter 
+      of Warcraft annual pass. In its 2012 second quarter 
       report, Diablo III was reported to have pushed Activision 
       Blizzard's expectations and as of July 2012, more than 10 
-      million people had played the game.[124] Diablo III 
+      million people had played the game. Diablo III 
       remains the fastest selling PC game to date, and also one 
       of the best-selling PC video games. As of the end of 2012, 
-      it had sold more than 12 million copies,[125] and as of 
+      it had sold more than 12 million copies, and as of 
       March 2013, Blizzard stated that Diablo III had around 1 
       million daily players, with 3 million unique players each 
-      month.[126] By May 2013, Diablo III had been played by 
-      14.5 million unique players.[127] and had sold over 30 
+      month. By May 2013, Diablo III had been played by 
+      14.5 million unique players. and had sold over 30 
       million copies worldwide by August 2015.</p>
 
-      <h5>Controversies</h5>
+      <br />
+      <h5>&#9760;Controversies&#9760;</h5>
+      <br />
 
       <h6>South Korea</h6>
 
@@ -935,7 +1121,7 @@ const About = () => {
       They also requested that gamers be given reimbursement 
       for any troubles they may have encountered. In addition, 
       they asked the French government to take a closer look at 
-      games with online-only DRM.[134] On June 28, Blizzard 
+      games with online-only DRM. On June 28, Blizzard 
       replied to the Que Choisir that the box for Diablo III 
       clearly labelled that a high-speed internet connection was 
       required and that most of the stability issues had been 
@@ -949,7 +1135,7 @@ const About = () => {
       the German version of the box by July 27, 2012, regarding 
       the always-online requirement and lack of ability to resell 
       the digital game.</p>
-      
+
       </div>
     </div>
     
