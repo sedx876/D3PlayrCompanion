@@ -11,7 +11,7 @@ const Home = () => {
       <h5 className="card text-white bg-dark"><span id="welcome">
       This app is designed for avid players of Diablo 3. Keep 
       track of your characters and their set builds. You can also 
-      keep track of drops you may need with the Farming List.
+      keep track of drops you are seeking with the Farming List.
       <br />
       <br /> 
       Diablo III is a hack-and-slash action role-playing game 
