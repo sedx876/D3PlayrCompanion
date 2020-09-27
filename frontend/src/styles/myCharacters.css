@@ -1,4 +1,10 @@
 #cCard{
   display: inline-block;
   font-size: larger;
+  color: crimson;
+}
+
+a, a:hover, a:focus, a:active {
+  text-decoration: none;
+  color: crimson;
 }

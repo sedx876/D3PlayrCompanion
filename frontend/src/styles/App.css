@@ -27,7 +27,7 @@ background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(10,163,161,1) 50%, rgb
 
 span {
   font-weight: bolder;
-  color: #0bdbab;
+  /* color: #0bdbab; */
   text-decoration: underline;
 }
 

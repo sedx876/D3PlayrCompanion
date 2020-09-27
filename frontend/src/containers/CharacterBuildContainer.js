@@ -1,34 +1,19 @@
 import React from 'react';
-import Login from '../components/Users/Login'
-import Signup from '../components/Users/Signup'
-import Navbar from '../components/Navbar'
-import Home from '../components/Home'
-import About from '../components/About'
 import { connect } from 'react-redux';
-import { getCurrentUser } from "../actions/currentUser"
 import { Route, Switch, withRouter } from 'react-router-dom'
 import MyCharacters from '../components/CharacterBuild/MyCharacters'
 import CharacterCard from '../components/CharacterBuild/CharacterCard'
-//import Footer from '../components/Footer'
 import NewCharacterFormWrapper from '../components/CharacterBuild/NewCharacterFormWrapper.js'
 import EditCharacterFormWrapper from '../components/CharacterBuild/EditCharacterFormWrapper.js'
 
 class CharacterBuildContainer extends React.Component {
 
-  componentDidMount() {
-    this.props.getCurrentUser()
-  }
 
   render() {
-    const { loggedIn, characters } = this.props
+    const { characters } = this.props
     return (
       <div className="CharacterBuild">
-        { loggedIn ? <Navbar /> : <Home />}
         <Switch>
-          <Route exact path='/about' component={About}/>
-          <Route exact path='/home' component={Home}/>
-          <Route exact path='/signup' render={({history}) =><Signup history={history}/>}/>
-          <Route exact path='/login' component={Login}/>
           <Route exact path='/characters' component={MyCharacters}/>
           <Route exact path='/characters/new' component={NewCharacterFormWrapper}/>
           <Route exact path='/characters/:id' render={props => {
@@ -42,10 +27,8 @@ class CharacterBuildContainer extends React.Component {
               return <EditCharacterFormWrapper character={character} {...props}/>
             }
           }/>
-          {/* <Route exact path='/characters/cards' component={CharacterCard}/> */}
         </Switch>
         
-        {/* <Footer /> */}
       </div>
     )
   }
@@ -53,9 +36,8 @@ class CharacterBuildContainer extends React.Component {
 
 const mapStateToProps = state => {
   return ({
-    loggedIn: !!state.currentUser,
     characters: state.myCharacters
   })
 }
 
-export default withRouter(connect(mapStateToProps, { getCurrentUser })(CharacterBuildContainer));
+export default withRouter(connect(mapStateToProps)(CharacterBuildContainer));
