@@ -3,3 +3,7 @@
   display: inline-block;
   font-size: larger;
 }
+
+.card-text{
+  text-align: center;
+}

@@ -10,19 +10,19 @@ const About = () => {
   return (
     <div className="card text-white bg-dark mb-3">
       <div className="card-body">
-        <h4 className="card-title">About Diablo 3-The Game</h4>
+        <h4 className="card-title">&#9760;Diablo 3-The Game&#9760;</h4>
 
-        <p className="card-text">Diablo III is a hack-and-slash action role-playing game 
-      developed and published by Blizzard Entertainment as the 
-      third installment in the Diablo franchise. It was released 
-      for Microsoft Windows and OS X in May 2012, the PlayStation 
-      3 and Xbox 360 in September 2013, the PlayStation 4 and 
-      Xbox One in August 2014, and the Nintendo Switch in 
-      November 2018. Players choose to play as one of seven 
-      character classes – Barbarian, Crusader, Demon Hunter, 
-      Monk, Necromancer, Witch Doctor, or Wizard – and are tasked 
-      with defeating the Lord of Terror, Diablo, as in previous 
-      games in the series. </p>
+        <p>Diablo III is a hack-and-slash action role-playing game 
+        developed and published by Blizzard Entertainment as the 
+        third installment in the Diablo franchise. It was released 
+        for Microsoft Windows and OS X in May 2012, the PlayStation 
+        3 and Xbox 360 in September 2013, the PlayStation 4 and 
+        Xbox One in August 2014, and the Nintendo Switch in 
+        November 2018. Players choose to play as one of seven 
+        character classes – Barbarian, Crusader, Demon Hunter, 
+        Monk, Necromancer, Witch Doctor, or Wizard – and are tasked 
+        with defeating the Lord of Terror, Diablo, as in previous 
+        games in the series.</p>
 
       <p>An expansion pack entitled Reaper of 
       Souls was released for PC in March 2014. It was released 
@@ -32,7 +32,7 @@ const About = () => {
       and Xbox One in June 2017. Diablo III: Eternal Collection, 
       combining Reaper of Souls and Rise of the Necromancer, was 
       released for PlayStation 4 and Xbox One in June 2017, and 
-      for the Nintendo Switch in November 2018. </p>
+      for the Nintendo Switch in November 2018.</p>
 
       <p>The game received 
       critical acclaim, although its always-on DRM feature was 

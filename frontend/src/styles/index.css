@@ -27,4 +27,24 @@ body{
   background-image: url(../images/Seamless-Black-Pattern-For-Download.jpg)
   /* background-image: url(../images/hexagonal-dark-pattern-background_1048-10861.jpg) */
   /* background-image: url(../images/grunge-background.jpg) */
+  /* background-image: url(../images/black-background-pattern-3.jpg) */
 }
+
+a {
+  color: crimson;
+  text-decoration: none;
+  /* text-transform: uppercase; */
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:active {
+  color: crimson;
+}
+
+a:visited {
+  color: crimson;
+}
+

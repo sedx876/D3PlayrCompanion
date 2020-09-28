@@ -8,6 +8,9 @@ const CharacterCard = ({ character }) => {
 
 
   return (
+
+    character ?
+
     <div className="card text-white bg-dark mb-2">
       <div className="card-header"><h3><span>{character.attributes.title}</span></h3></div>
         <div className="card-body">
@@ -33,6 +36,7 @@ const CharacterCard = ({ character }) => {
           <Link className="btn btn-outline-warning" to={`/characters/${character.id}/edit`}>Edit or Delete this Character</Link>
   </div>
   </div>
+  : <p>Character not found</p>
   
   )
 }
