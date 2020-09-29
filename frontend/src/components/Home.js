@@ -1,6 +1,7 @@
 import React from 'react'
 import '../styles/home.css'
 import {Link} from 'react-router-dom'
+import d3 from '../images/d3.jpg'
 
 const Home = () => {
   
@@ -12,7 +13,9 @@ const Home = () => {
       This app is designed for avid players of Diablo 3. Keep 
       track of your characters and their set builds. You can also 
       keep track of drops you are seeking with the Farming List.
+      <img className='diablo' alt="diablo" src={d3}/>
      </span></h5>
+     
       <h4 className="card text-white bg-dark">
       To Begin: <Link to="/signup">Sign Up</Link> 
       or 
