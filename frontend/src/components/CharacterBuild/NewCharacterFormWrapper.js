@@ -2,6 +2,7 @@ import React from 'react'
 import CharacterForm from './CharacterForm'
 import { createCharacter } from '../../actions/myCharacters'
 import { connect } from 'react-redux'
+import '../../styles/characterForm.css'
 
 const NewCharacterFormWrapper = ({ createCharacter, history }) => {
 

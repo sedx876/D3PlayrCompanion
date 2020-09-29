@@ -1,6 +1,8 @@
 import React from 'react'
 import {connect} from 'react-redux'
 import {updateFarmingListForm} from '../../actions/farmingListForm'
+import '../../styles/farmingForm.css'
+
 
 const FarmingListForm = ({ formData, updateFarmingListForm, handleSubmit, editMode }) => {
 

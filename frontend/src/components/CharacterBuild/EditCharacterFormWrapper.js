@@ -3,6 +3,7 @@ import CharacterForm from './CharacterForm'
 import { updateCharacter, deleteCharacter } from '../../actions/myCharacters'
 import { setFormDataForEdit, resetCharacterForm } from '../../actions/characterForm'
 import { connect } from 'react-redux'
+import '../../styles/characterForm.css'
 
 class EditCharacterFormWrapper extends React.Component {
 

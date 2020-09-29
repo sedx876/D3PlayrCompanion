@@ -2,9 +2,9 @@ import React from 'react'
 import { connect } from 'react-redux'
 import { updateSignupForm } from "../../actions/signupForm.js"
 import { signup } from "../../actions/currentUser.js"
+import '../../styles/signup.css'
 
-
-const Signup = ({ signupFormData, updateSignupForm, signup }) => {
+const Signup = ({ signupFormData, updateSignupForm, signup, history }) => {
 
   const handleUserInfoInputChange = event => {
     const { name, value } = event.target
@@ -18,7 +18,7 @@ const Signup = ({ signupFormData, updateSignupForm, signup }) => {
 
   const handleSubmit = event => {
     event.preventDefault()
-    signup(signupFormData)
+    signup(signupFormData, history)
   }
 
   return (
@@ -26,7 +26,7 @@ const Signup = ({ signupFormData, updateSignupForm, signup }) => {
       <input className="form-control col-sm-4" placeholder='username' value={signupFormData.username} name='username' type='text' onChange={handleUserInfoInputChange} />
       <br />
       <input className="form-control col-sm-4" placeholder="password" value={signupFormData.password} name="password" type="text" onChange={handleUserInfoInputChange} />
-      <input className="btn btn-primary" type="submit" value="Sign Up"/>
+      <input className="btn btn-dark" type="submit" value="Sign Up"/>
     </form>
   )
 }

@@ -95,6 +95,7 @@ export const createCharacter = (characterData, history) => {
         dispatch(addCharacter(resp.data))
         dispatch(resetCharacterForm())
         history.push(`/characters/${resp.data.id}`)
+        dispatch(getMyCharacters())
       }
     })
     .catch(console.log)
