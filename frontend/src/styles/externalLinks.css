@@ -13,7 +13,6 @@
   width: 150px;
   align-content: center;
   display: block;
-  justify-items: center;
   margin-left: auto;
   margin-right: auto;
 }
@@ -23,7 +22,141 @@
   width: 100px;
   align-content: center;
   display: block;
-  justify-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.gameguide{
+  height: 100px;
+  width: 150px;
+  align-content: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.diaforum{
+  height: 100px;
+  width: 150px;
+  align-content: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.serverstatus{
+  height: 100px;
+  width: 150px;
+  align-content: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.diablo1{
+  height: 100px;
+  width: 150px;
+  align-content: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.whimsyshire{
+  height: 100px;
+  width: 150px;
+  align-content: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cowlevel{
+  height: 100px;
+  width: 150px;
+  align-content: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.petlist{
+  height: 125px;
+  width: 125px;
+  align-content: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.pennetlist{
+  height: 125px;
+  width: 125px;
+  align-content: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.wingslist{
+  height: 125px;
+  width: 125px;
+  align-content: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.d4{
+  height: 150px;
+  width: 175px;
+  align-content: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.goblin{
+  height: 150px;
+  width: 175px;
+  align-content: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.seasons{
+  height: 150px;
+  width: 175px;
+  align-content: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.leggems{
+  height: 125px;
+  width: 125px;
+  align-content: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.setdungeon{
+  height: 125px;
+  width: 150px;
+  align-content: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.tristram{
+  height: 125px;
+  width: 150px;
+  align-content: center;
+  display: block;
   margin-left: auto;
   margin-right: auto;
 }
