@@ -1,5 +1,7 @@
 import React from 'react'
 import '../styles/externalLinks.css'
+import offdia from '../images/offdia.jpg'
+import icyveins from '../images/icyveins.png'
 
 class ExternalLinks extends React.Component {
 
@@ -9,11 +11,13 @@ class ExternalLinks extends React.Component {
 
         <div className="card text-white bg-dark mb-2" id="linkCard">
           <h4 className="card-title"><a href="https://us.diablo3.com/en/" target="_blank" rel="noopener noreferrer">Official Diablo Site</a></h4>
+          <img className='offdia' alt="official diablo site" src={offdia}/>
           <p className="card-text">Official Diablo 3 source</p>
         </div>
 
         <div className="card text-white bg-dark" id="linkCard">
           <h4 className="card-title"><a href="https://www.icy-veins.com/" target="_blank" rel="noopener noreferrer">Icy Veins</a></h4>
+          <img className='icyveins' alt="icy veins site" src={icyveins}/>
           <p className="card-text">Find pre-tested Builds</p>
         </div>
 

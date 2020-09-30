@@ -1,4 +1,7 @@
 #iCard{
   display: inline-block;
   font-size: larger;
+  color: crimson;
+  /* margin-left: auto;
+  margin-right: auto; */
 }
