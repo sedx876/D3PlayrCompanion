@@ -1,5 +1,15 @@
 import React from 'react'
 import '../styles/About.css'
+import d3Mal from '../images/d3Mal.jpg'
+import gamePlay from '../images/gamePlay.jpg'
+import wDoctor from '../images/wDoctor.jpg'
+import barb from '../images/barb.jpg'
+import wiz from '../images/wiz.jpg'
+import monks from '../images/monks.jpg'
+import dem from '../images/dem.jpg'
+import sader from '../images/sader.jpg'
+import mancer from '../images/mancer.jpg'
+import tram from '../images/tram.jpg'
 
 
 
@@ -43,6 +53,8 @@ const About = () => {
       copies. As of August 2015, the number of sales had grown to 
       over 30 million. A sequel, Diablo IV, was announced in 2019 
       and is currently in development.</p>
+
+      <img className='d3Mal' alt="Diablo 3 Malthiel" src={d3Mal}/>
 
       <br />
 
@@ -109,6 +121,8 @@ const About = () => {
       example, one skill rune for the Wizard's meteor ability 
       reduces its arcane power cost, while another turns the 
       meteor to ice, causing cold damage rather than fire.</p>
+
+      <img className='gamePlay' alt="game play" src={gamePlay}/>
 
       <h6>Hardcore Mode</h6>
 
@@ -365,6 +379,8 @@ const About = () => {
         Witch Doctor uses Mana, a vast pool of mental power 
         which regenerates slowly.</li>
 
+        <img className='wDoctor' alt="witch doctor" src={wDoctor}/>
+
         <br />
 
         <li>The Barbarian was initially the only returning class 
@@ -381,6 +397,8 @@ const About = () => {
         abilities. Fury is used for the barbarian's strongest 
         abilities and degenerates over time.</li>
 
+        <img className='barb' alt="barbarian" src={barb}/>
+
         <br />
 
         <li>The Wizard succeeds the sorceress from Diablo II 
@@ -392,6 +410,8 @@ const About = () => {
         through walls. Wizards fuel their spells with arcane 
         power, which is a shallow but fast-regenerating power 
         source.</li>
+
+        <img className='wiz' alt="wizard" src={wiz}/>
 
         <br />
 
@@ -407,6 +427,8 @@ const About = () => {
         slowly generated through attacking, though it does not 
         degenerate.</li>
 
+        <img className='monks' alt="monks" src={monks}/>
+
         <br />
 
         <li>The Demon Hunter combines elements of Diablo II's 
@@ -417,6 +439,8 @@ const About = () => {
         regenerating resource that is used for attacks, while 
         discipline is a slow regenerating resource used for 
         defensive abilities involving acrobatics or shadows.</li>
+
+        <img className='dem' alt="demon hunter" src={dem}/>
 
         <br />
 
@@ -434,6 +458,8 @@ const About = () => {
         generated through attacking enemies, getting attacked by 
         enemies, and using certain abilities.</li>
 
+        <img className='sader' alt="crusader" src={sader}/>
+
         <br />
 
         <li>The Necromancer is a death-themed spellcaster, 
@@ -450,6 +476,8 @@ const About = () => {
         Witch Doctor's lighthearted "creepy crawlies" summons of 
         spiders and snakes, the Necromancer has a "grim, visceral 
         and dark" design around blood, bone and corpses.</li>
+
+        <img className='mancer' alt="necromancer" src={mancer}/>
 
       </ul>
 
@@ -740,6 +768,8 @@ const About = () => {
       still has a mortal heart that can be corrupted, and 
       Tyrael wonders if the Nephalem will remain the savior, 
       or become the doom of all creation.</p>
+
+      <img className='tram' alt="plot" src={tram}/>
 
       <br />
       <h5>&#9760;Development&#9760;</h5>
