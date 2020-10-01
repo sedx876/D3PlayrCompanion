@@ -30,6 +30,7 @@ import monk from '../images/monk.jpeg'
 import necro from '../images/necro.jpg'
 import witchdr from '../images/witchdr.jpg'
 import wizard from '../images/wizard.jpg'
+import discord from '../images/discord.jpg'
 
 
 class ExternalLinks extends React.Component {
@@ -187,6 +188,11 @@ class ExternalLinks extends React.Component {
         <div className="card text-white bg-dark" id="linkCard">
           <h4 className="card-title"><a href="https://diablo.fandom.com/wiki/Kanai%27s_Cube" target="_blank" rel="noopener noreferrer">Kanai's Cube</a></h4>
           <img className='cube' alt="cube" src={cube}/>
+        </div>
+
+        <div className="card text-white bg-dark" id="linkCard">
+          <h4 className="card-title"><a href="https://diablo.fandom.com/wiki/Diablo_Wiki:Discord" target="_blank" rel="noopener noreferrer">Diablo Discord </a></h4>
+          <img className='discord' alt="discord" src={discord}/>
         </div>
       </div>
         

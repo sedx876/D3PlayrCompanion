@@ -9,7 +9,7 @@
 }
 
 .offdia{
-  height: 100px;
+  height: 125px;
   width: 150px;
   align-content: center;
   display: block;
@@ -18,7 +18,7 @@
 }
 
 .icyveins{
-  height: 100px;
+  height: 125px;
   width: 100px;
   align-content: center;
   display: block;
@@ -27,7 +27,7 @@
 }
 
 .gameguide{
-  height: 100px;
+  height: 125px;
   width: 150px;
   align-content: center;
   display: block;
@@ -36,7 +36,7 @@
 }
 
 .diaforum{
-  height: 100px;
+  height: 125px;
   width: 150px;
   align-content: center;
   display: block;
@@ -45,7 +45,7 @@
 }
 
 .serverstatus{
-  height: 100px;
+  height: 125px;
   width: 150px;
   align-content: center;
   display: block;
@@ -54,7 +54,7 @@
 }
 
 .diablo1{
-  height: 100px;
+  height: 125px;
   width: 150px;
   align-content: center;
   display: block;
@@ -63,7 +63,7 @@
 }
 
 .whimsyshire{
-  height: 100px;
+  height: 125px;
   width: 150px;
   align-content: center;
   display: block;
@@ -72,7 +72,7 @@
 }
 
 .cowlevel{
-  height: 100px;
+  height: 125px;
   width: 150px;
   align-content: center;
   display: block;
@@ -108,7 +108,7 @@
 }
 
 .d4{
-  height: 150px;
+  height: 125px;
   width: 175px;
   align-content: center;
   display: block;
@@ -117,7 +117,7 @@
 }
 
 .goblin{
-  height: 150px;
+  height: 125px;
   width: 175px;
   align-content: center;
   display: block;
@@ -126,8 +126,8 @@
 }
 
 .seasons{
-  height: 150px;
-  width: 175px;
+  height: 125px;
+  width: 125px;
   align-content: center;
   display: block;
   margin-left: auto;
@@ -270,6 +270,15 @@
 }
 
 .wizard{
+  height: 125px;
+  width: 125px;
+  align-content: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.discord{
   height: 125px;
   width: 125px;
   align-content: center;
