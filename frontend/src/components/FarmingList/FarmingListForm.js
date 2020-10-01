@@ -9,7 +9,6 @@ const FarmingListForm = ({ formData, updateFarmingListForm, handleSubmit, editMo
   const { name, notes } = formData
 
   const handleChange = event => {
-    console.log('triggered handleChange')
     const { name, value } = event.target
     updateFarmingListForm(name, value)
   }
@@ -22,7 +21,7 @@ const FarmingListForm = ({ formData, updateFarmingListForm, handleSubmit, editMo
         handleSubmit(formData)
       }}>
       <input className="form-control col-sm-8" onChange={handleChange} placeholder='Add Item' name='name' value={name} isrequired='true' />
-      <input className="form-control col-sm-8" onChange={handleChange} placeholder='Add Notes for Item' name='notes' value={notes} isrequired='true' />
+      <input className="form-control col-sm-8" onChange={handleChange} placeholder='Add Notes for Item' name='notes' value={notes} />
       <input className="btn btn-outline-warning" type='submit' value={editMode ? 'Update Item' : 'Add Item'} />
       </form>
     </div>

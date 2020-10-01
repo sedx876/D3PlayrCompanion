@@ -7,11 +7,10 @@ import {withRouter} from 'react-router-dom'
 const Logout = ({ logout, history }) => {
   return (
     <form onSubmit={(event) => {
-        event.preventDefault()
-        logout()
-        history.push('/')
-      }
-    }>
+      event.preventDefault()
+      logout()
+      history.push('/')
+    }}>
       <input className="btn btn-dark" type="submit" value="Log Out"/>
     </form>
   )

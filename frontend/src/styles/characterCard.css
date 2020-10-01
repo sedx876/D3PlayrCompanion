@@ -8,10 +8,8 @@ span{
 
 #root > div > div.CharacterBuild > div > div.card-body > a{
   display: block;
-  /* justify-items: center; */
-  /* margin-left: auto;
-  margin-right: auto; */
 }
+
 #cCard{
   display: inline-block;
   font-size: larger;
@@ -28,6 +26,5 @@ span{
   display: block;
   text-align: center;
   margin-left: auto;
-
   margin-right: auto;
 }

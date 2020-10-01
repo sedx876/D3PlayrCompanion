@@ -2,6 +2,7 @@ import { resetLoginForm } from "./loginForm.js"
 import { resetSignupForm } from './signupForm.js'
 import { getMyCharacters, clearCharacters } from './myCharacters.js'
 import { getMyItems, clearItems } from './myFarmingList'
+
 export const setCurrentUser = user => {
   return {
     type: "SET_CURRENT_USER",
@@ -29,7 +30,6 @@ export const getCurrentUser = () => {
         if (response.error) {
           alert(response.error)
         } else {
-          //console.log("here")
           dispatch(setCurrentUser(response.data))
           dispatch(getMyItems())
           dispatch(getMyCharacters())

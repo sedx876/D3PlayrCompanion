@@ -21,9 +21,7 @@ export class App extends Component {
     const { loggedIn } = this.props
     return (
       <div>
-      {/* <Navbar /> */}
-      { loggedIn ? <Navbar /> : <Home />}
-        
+        { loggedIn ? <Navbar /> : <Home />}
         <CharacterBuildContainer />
         <FarmingListContainer />
         <StaticContainer/>

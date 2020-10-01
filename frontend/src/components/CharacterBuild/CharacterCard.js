@@ -5,8 +5,6 @@ import '../../styles/characterCard.css'
 
 const CharacterCard = ({ character }) => {
 
-
-
   return (
 
     character ?
@@ -36,7 +34,8 @@ const CharacterCard = ({ character }) => {
           <Link className="btn btn-outline-warning" to={`/characters/${character.id}/edit`}>Edit or Delete this Character</Link>
   </div>
   </div>
-  : <p>Character not found</p>
+  : 
+  <p>Character not found</p>
   
   )
 }

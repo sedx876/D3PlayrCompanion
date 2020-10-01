@@ -8,7 +8,8 @@ import '../../styles/myCharacters.css'
 const MyCharacters = props => {
   const characterCards = props.characters.length > 0 ?
   props.characters.map(c => (
-    <p className="card text-white bg-dark mb-2" id="cCard" key={c.id}><Link to={`/characters/${c.id}`}>{c.attributes.title}</Link></p>)) : 
+    <p className="card text-white bg-dark mb-2" id="cCard" key={c.id}><Link to={`/characters/${c.id}`}>{c.attributes.title}</Link></p>)) 
+    : 
     null
 
   return characterCards

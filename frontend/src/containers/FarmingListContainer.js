@@ -15,17 +15,19 @@ class FarmingListContainer extends React.Component {
       <div>
         <Switch>
           <Route exact path='/farminglist' component={MyFarmingList}/>
+
           <Route exact path='/farminglist/new' component={NewItemFormWrapper} />
+
           <Route exact path='/items/:id' render={props => {
             const item = items.find(item => item.id === props.match.params.id)
             console.log(item)
             return <ItemCard item={item} {...props} />
           }}/>
+          
           <Route exact path='/items/:id/edit' render={props => {
               const item = items.find(item => item.id === props.match.params.id)
               return <EditItemFormWrapper item={item} {...props}/>
-            }
-          }/>
+            }}/>
         </Switch>
       </div>
     )

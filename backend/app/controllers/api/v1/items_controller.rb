@@ -6,9 +6,7 @@ class Api::V1::ItemsController < ApplicationController
       @items = current_user.items
       render json: ItemSerializer.new(@items)
     else
-      render json: {
-        error: "You must be logged in to see items"
-      }
+      render json: {error: "You must be logged in to see items"}
     end
   end
 
@@ -18,13 +16,10 @@ class Api::V1::ItemsController < ApplicationController
 
   def create
     @item = current_user.items.build(item_params)
-
     if @item.save
       render json:  ItemSerializer.new(@item), status: :created
     else
-      error_resp = {
-        error: @item.errors.full_messages.to_sentence
-      }
+      error_resp = {error: @item.errors.full_messages.to_sentence}
       render json: error_resp, status: :unprocessable_entity
     end
   end
@@ -33,9 +28,7 @@ class Api::V1::ItemsController < ApplicationController
     if @item.update(item_params)
       render json:  ItemSerializer.new(@item), status: :ok
     else
-      error_resp = {
-        error: @item.errors.full_messages.to_sentence
-      }
+      error_resp = {error: @item.errors.full_messages.to_sentence}
       render json: error_resp, status: :unprocessable_entity
     end
   end
@@ -44,20 +37,20 @@ class Api::V1::ItemsController < ApplicationController
     if @item.destroy
       render json:  { data: "Item successfully destroyed" }, status: :ok
     else
-      error_resp = {
-        error: "Item not found and not destroyed"
-      }
+      error_resp = {error: "Item not found and not destroyed"}
       render json: error_resp, status: :unprocessable_entity
     end
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_item
-      @item = Item.find(params[:id])
-    end
 
-    def item_params
-      params.require(:item).permit(:name, :notes)
-    end
+    # Use callbacks to share common setup or constraints between actions.
+  def set_item
+    @item = Item.find(params[:id])
+  end
+
+  def item_params
+    params.require(:item).permit(:name, :notes)
+  end
+  
 end
