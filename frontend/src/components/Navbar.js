@@ -18,7 +18,11 @@ const Navbar = ({ currentUser, loggedIn }) => {
   return(
 
   <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
-    <NavLink className="nav-link" exact activeClassName="active" to='/home'><img className='theD3' alt="D3 Logo" src={theD3}/>D3PlayrCompanion</NavLink>
+    <NavLink 
+      className="nav-link" 
+      exact activeClassName="active" 
+      to='/home'>
+      <img className='theD3' alt="D3 Logo" src={theD3}/>D3PlayrCompanion</NavLink>
 
     <button className="navbar-toggler" 
             type="button" 
@@ -32,23 +36,53 @@ const Navbar = ({ currentUser, loggedIn }) => {
 
   <div className="collapse navbar-collapse" id="navbarColor01">
     <ul className="navbar-nav mr-auto">
+
       <li className="nav-item">
-        <NavLink className="nav-link" exact activeClassName="active" to='/about'><img className='dLogo' alt="D3 Logo" src={dLogo}/>About</NavLink>
+        <NavLink 
+          className="nav-link" 
+          exact activeClassName="active" 
+          to='/about'>
+          <img className='dLogo' alt="D3 Logo" src={dLogo}/>About</NavLink>
       </li>
+
       <li className="nav-item">
-        <NavLink className="nav-link" exact activeClassName="active" to='/characters'><img className='tyr' alt="tyr logo" src={tyr}/>Characters</NavLink>
+        <NavLink 
+          className="nav-link" 
+          exact activeClassName="active" 
+          to='/characters'>
+          <img className='tyr' alt="tyr logo" src={tyr}/>Characters</NavLink>
       </li>
+
       <li className="nav-item">
-        <NavLink className="nav-link" exact activeClassName="active" to='/characters/new'><img className='barLogo' alt="barbarian logo" src={barLogo}/>Add New Character Build</NavLink>
+        <NavLink 
+        className="nav-link" 
+        exact activeClassName="active" 
+        to='/characters/new'>
+        <img className='barLogo' alt="barbarian logo" src={barLogo}/>Add New Character Build</NavLink>
       </li>
+
       <li className="nav-item">
-        <NavLink className="nav-link" exact activeClassName="active" to='/farminglist'><img className='dhLogo' alt="dh logo" src={dhLogo}/>Farming List</NavLink>
+        <NavLink 
+          className="nav-link" 
+          exact activeClassName="active" 
+          to='/farminglist'>
+          <img className='dhLogo' alt="dh logo" src={dhLogo}/>Farming List</NavLink>
       </li>
+
       <li className="nav-item">
-        <NavLink className="nav-link" exact activeClassName="active" to='/farminglist/new'><img className='monkLogo' alt="monk logo" src={monkLogo}/>Add Item to Farming List</NavLink>
+        <NavLink 
+          className="nav-link" 
+          exact activeClassName="active" 
+          to='/farminglist/new'>
+          <img className='monkLogo' alt="monk logo" src={monkLogo}/>Add Item to Farming List</NavLink>
       </li>
+
       <li className="nav-item">
-        <NavLink className="nav-link" exact activeClassName="active" to='/links'><img className='portal' alt="portal" src={portal}/>Diablo Links</NavLink>
+        <NavLink 
+          className="nav-link" 
+          exact activeClassName="active" 
+          to='/links'>
+          <img className='portal' alt="portal" src={portal}/>Diablo Links</NavLink>
       </li>
     </ul>
     { loggedIn ? <><p id="loggedin">Logged in as {currentUser.attributes.username}</p><Logout /></> : null}
