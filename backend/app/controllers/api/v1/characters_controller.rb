@@ -1,7 +1,7 @@
 class Api::V1::CharactersController < ApplicationController
   before_action :set_character, only: [:show, :update, :destroy]
 
-  
+  #Presents all our chracters
   def index
     if logged_in?
       @characters = current_user.characters
@@ -11,11 +11,12 @@ class Api::V1::CharactersController < ApplicationController
     end
   end
 
-  
+  #Shows a particular instance of chracters
   def show
     render json: @character
   end
 
+  #Allows us to make a new character instance
   def create
     @character = current_user.characters.build(character_params)
     if @character.save
@@ -26,6 +27,7 @@ class Api::V1::CharactersController < ApplicationController
     end
   end
 
+  #allows us to edit an instance of character
   def update
     if @character.update(character_params)
       render json:  CharacterSerializer.new(@character), status: :ok
