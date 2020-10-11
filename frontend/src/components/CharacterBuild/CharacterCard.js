@@ -2,7 +2,7 @@ import React from 'react'
 import {Link} from 'react-router-dom'
 import '../../styles/characterCard.css'
 
-
+//presentational component
 const CharacterCard = ({ character }) => {
 
   return (
