@@ -1,6 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { Route, Switch, withRouter } from 'react-router-dom'
+
 import MyCharacters from '../components/CharacterBuild/MyCharacters'
 import CharacterCard from '../components/CharacterBuild/CharacterCard'
 import NewCharacterFormWrapper from '../components/CharacterBuild/NewCharacterFormWrapper.js'
@@ -14,6 +15,7 @@ class CharacterBuildContainer extends React.Component {
     return (
       <div className="CharacterBuild">
         <Switch>
+        
           <Route exact path='/characters' component={MyCharacters}/>
           
           <Route exact path='/characters/new' component={NewCharacterFormWrapper}/>

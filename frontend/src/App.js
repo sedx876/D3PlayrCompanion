@@ -13,6 +13,10 @@ import StaticContainer from './containers/StaticContainer'
 
 export class App extends Component {
 
+
+  //componentDidMount is a lifecycle method runs after first render
+  //setting making sure we have a current user
+
   componentDidMount() {
     this.props.getCurrentUser()
   }
@@ -31,10 +35,15 @@ export class App extends Component {
   }
 }
 
+
+//is used for selecting the part of the data from the store 
+//that the connected component needs. 
+
 const mapStateToProps = state => {
   return ({
     loggedIn: !!state.currentUser,
   })
 }
-
+//withRouter is supplied by react-router-dom and gives access 
+//to props.history
 export default withRouter(connect(mapStateToProps, {getCurrentUser})(App))
