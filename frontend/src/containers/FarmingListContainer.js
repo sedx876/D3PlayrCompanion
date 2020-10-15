@@ -20,7 +20,6 @@ class FarmingListContainer extends React.Component {
 
           <Route exact path='/items/:id' render={props => {
             const item = items.find(item => item.id === props.match.params.id)
-            console.log(item)
             return <ItemCard item={item} {...props} />
           }}/>
           

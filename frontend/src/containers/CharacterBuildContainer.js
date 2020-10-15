@@ -1,7 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { Route, Switch, withRouter } from 'react-router-dom'
-
 import MyCharacters from '../components/CharacterBuild/MyCharacters'
 import CharacterCard from '../components/CharacterBuild/CharacterCard'
 import NewCharacterFormWrapper from '../components/CharacterBuild/NewCharacterFormWrapper.js'
@@ -22,7 +21,6 @@ class CharacterBuildContainer extends React.Component {
 
           <Route exact path='/characters/:id' render={props => {
               const character = characters.find(character => character.id === props.match.params.id)
-              console.log(character)
               return <CharacterCard character={character} {...props}/>
           }}/>
 
