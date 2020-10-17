@@ -3,18 +3,16 @@ import { connect } from 'react-redux'
 import { Link } from 'react-router-dom'
 import '../../styles/myCharacters.css'
 
-
 const MyCharacters = props => {
   const characterCards = props.characters.length > 0 ?
   props.characters.map(c => (
-
+    <>
     <p className="card text-white bg-dark mb-2" 
     id="cCard" 
     key={c.id}>
     <Link to={`/characters/${c.id}`}>{c.attributes.title}</Link>
-
     </p>
-    
+    </>
     )) 
     : 
     null
@@ -24,13 +22,6 @@ const MyCharacters = props => {
   {characterCards}
   </>)
 }
-
-
-
-
-
-
-
 
 
 const mapStateToProps = state => {

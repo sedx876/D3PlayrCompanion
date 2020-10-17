@@ -1,5 +1,5 @@
 import React, {Component} from 'react'
-//import React, {useState} from 'react'
+
 
 class Counter extends Component {
 
@@ -10,15 +10,16 @@ class Counter extends Component {
     }
   }
 
-  handleIncrement() {
+  handleIncrement = () => {
     this.setState({
       count: this.state.count + 1
     })
   }
+
   render() {
     return (
       <>
-      <button className="btn btn-dark" onClick={(e) => this.handleIncrement(e)}>Like</button>
+      <button className="btn btn-dark" onClick={this.handleIncrement}>Like</button>
       <h6>Likes: {this.state.count}</h6>
       </>
     )
@@ -26,18 +27,5 @@ class Counter extends Component {
 
 }
 
-// const Counter = () => {
-//   const [counter, setCounter] = useState(0)
-
-//   return (
-//     <>
-//     <button className="btn btn-dark" onClick={() => {setCounter(counter + 1)}}>
-//       Likes
-//     </button>
-//     <p>{counter}</p>
-//     </>
-//   )
-
-// }
 
 export default Counter
